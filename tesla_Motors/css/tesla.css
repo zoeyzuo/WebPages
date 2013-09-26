@@ -1,0 +1,208 @@
+/*****************************整体布局***********************************/
+body{ font-family: "proxima-nova-1","proxima-nova-2",sans-serif; background-color: rgb(247, 247, 247); background-image: url("images/bg_gradient_gray.gif"); background-repeat: repeat-x; background-position: 50% 0%;}
+#top{ width: 100%; height: 30px; position: absolute; z-index: 98; top:0; left: 0; padding: 30px 0 0 0; background-image: url("images/background_mainnavigation_short.jpg"); background-repeat: repeat-x;}
+#mainNav{ width: 100%; height: 30px;  box-shadow: rgb(34, 34, 34) 0px 1px 8px 1px; background-image: url("images/background-ribbon.jpg"); background-repeat: repeat-x;}
+#main{ width: 960px; height: auto; margin:0px auto 0 auto; text-align: left;}
+#footer{ width: 100%; height: 220px; background-image: url("images/bg_footer.jpg"); background-repeat: repeat-x;}
+
+#topHide{ width: 100%; height: 110px; position: absolute; top:-55px; left: 0; z-index: 97; background-image: url("images/nav_sliding_back.jpg"); background-repeat: repeat-x; background-position: 50% 0%; background-color: rgb(250, 250, 250);}
+/*****************************整体布局***********************************/
+
+/*****************************top***********************************/
+.topT{ width: 960px; height: 100%; margin: 0px auto 0 auto; position: relative;}
+.topT ul,.mainNavT ul{ width: 850px; height: 20px; }
+.topTul{ margin:0px 0 0 100px;}
+.topT li,.mainNavT li{ position: relative; float: left; display: inline-block; width: auto; height: 20px;}
+.topT a{ height: 20px; display: inline-block; margin-right: 40px; color: rgb(114, 114, 114); line-height: 20px; font-size: 15px; text-transform: uppercase; font-weight: 700; text-shadow: rgb(255, 255, 255) 0px 1px 0px;}
+.topT .topTA1{ color: #000;}
+#Toplogo{ width: 78px; height: 105px; position: absolute; z-index: 99; left: 0; top:-30px; }
+
+/*#topTAContents{ width: 960px; height: 100%; margin: 0 auto; }*/
+.topTAContent{ width: auto; height: auto; display: none; text-align: left; padding-top: 15px; position: absolute; left: 0; top:20px; z-index: 99;}
+.topTAContent ul{ float: left; width: 140px; height: 60px;}
+.topTAContent li{ width: 140px; height: 20px; cursor: pointer; color: rgb(102, 102, 102); font-weight: 600; line-height: 20px; text-transform: uppercase;}
+
+/*****************************top end***********************************/
+
+/*****************************mainNav***********************************/
+.mainNavT{ width: 960px; height: 25px; margin: 60px auto 0 auto; padding: 5px 0 0 0;}
+.mainNavT ul{ margin: 0px 0 0 100px;}
+.mainNavT .topTA2{ color:#fff;}
+.mainNavT a{ font-size: 12px;color: rgb(204, 204, 204); font-weight: 400; height: 20px; display: inline-block; margin-right: 20px; line-height: 20px; text-transform: uppercase;} 
+/*****************************mainNav***********************************/
+
+/*****************************main***********************************/
+#mainTitle{  width: 100%; height: 38px;color: rgb(102, 102, 102); font-size: 32px; line-height: 38px; padding: 30px 0 20px 0; text-transform: uppercase; text-align: left; font-weight: 100;}
+
+#mainTitles{ position: relative; width: 830px; *width: 960px; height: 143px; overflow: hidden; padding: 0 0 0 130px; background-image: url("images/mini-nav-bg.png"); background-repeat: repeat-x; position: 0 100%;}
+#mainTitleUl{ width: 900px; height: 143px; }
+
+.mainTitlesA{ display: block; float: left; width: 116px; height: 143px; cursor: pointer; background-image: url("images/normal_03.png");}
+.mainTitlesA:hover{ background-image: url("images/nav_hover_03.png");}
+.mainTitlesA1{  background-image: url("images/nav_hover_03.png"); background-position: -124px 100%;}
+.mainTitlesA2{ background-position: 0% 100%; *margin-top: -15px;}
+.mainTitlesA3{ background-position: -240px 100%; *margin-top: -30px;}
+.mainTitlesA4{ background-position: -360px 100%; *margin-top: -45px;}
+.mainTitlesA5{ background-position: -600px 100%; *margin-top: -60px;}
+.mainTitlesA6{ background-position: -720px 100%; *margin-top: -75px;}
+.mainTitlesA7{ display: none; width: 200px; height: 63px; background-image: url("images/features-order-cta.gif"); background-color: #fff; background-position: 50% 0%; background-repeat: no-repeat; margin-top: 80px;}
+.mainTitlesA7:hover{ background-image: url("images/features-order-cta.gif"); }
+
+#mainTitlePer{ width: 960px; width: 90px; text-align: left; }
+#mainTitlePer a{ width: 140px; height: 50px; padding:0 0 0 70px; margin:0px 0 20px 20px ; display: block; background-image: url("images/performance_03.png"); background-position: 0 50%; background-repeat: no-repeat; color: rgb(102, 102, 102); font-size: 18px; font-weight: 500; line-height: 50px; text-transform: uppercase; letter-spacing: 1px; }
+#mainMain{ width: 100%; height: auto; padding-top: 20px; background-color: #fff; text-align: left;}
+
+.mainTitlePer1{ width: 960px; height: 600px; background-image: url("images/perf-black.jpg"); background-position: 0 100%; background-repeat: no-repeat;}
+.mainTitlePerbig{ height: 75px; vertical-align:baseline; color: rgb(102, 102, 102); font-size: 30px; line-height: 37.5px; font-weight: 100; letter-spacing: 1px; text-transform: uppercase; }
+.mainTitlePer1Left{ float: left; width: 220px; height: 90px; margin: 0 10px; padding-left: 80px;}
+.mainTitlePer1Left span{ display: block; width: 220px;  }
+.mainTitlePer1Center{ float: left; width: 220px; height: 133px; margin: 0 10px; padding: 0 40px; }
+.mainTitlePer1Center p{ width: 220px; height: 120px;}
+.mostWord{ color: rgb(102, 102, 102); font-size: 13px; line-height: 20px; font-family: Arial,Helvetica,sans;}
+.mainTitlePer1Right{ float: left; width: 220px; height: 153px; margin: 0 10px; }
+.mainTitlePer1Right p{ width: 100%; height: 100%;}
+
+.mainTitlePer2{ width: 100%; height: 500px; background-image: url("images/powertrain_bkgd.jpg"); background-position: 0% 0%;}
+.mainTitlePer2Left{ width: 380px; height: 357px; margin: 0px 10px 0 10px; padding: 52px; 0 0 80px;}
+.mainTitlePer2Left2{ width: 380px; height: 140px; margin: 20px 0;}
+.mainTitlePer2 img{ width: 360px; height: 82px;}
+
+.mainTitlePer3{ width: 960px; height: 300px; }
+.mainTitlePer3Left{ float: left; width: 380px; height: 237px; margin: 0 10px; padding-left: 80px;}
+.mainTitlePer3Left img{ width: 424px; height: 237px;}
+.mainTitlePer3Right{ float: left; width: 380px; height: 242px; margin: 0 10px;}
+h2{ height: 21px; color: rgb(51, 51, 51); font-size: 14px; font-weight: 700px; line-height: 21px; margin-bottom: 7px; text-transform: uppercase;}
+.mainTitlePer3RMiddle{ height: 38px; margin: 15px 0;}
+.mainTitlePer5{ width: 100%; height: 270px; background-image: url("images/en_eu_model-s-performance-stats_localized.png"); background-repeat: no-repeat; background-position: 535px 67px;}
+.mainTitlePer6{ width: 100%; height: 305px; background-image: url("images/performance-plus_20130403.jpg"); background-repeat: no-repeat; background-position: 0% 0%;}
+.mainTitlePer6Right{ width: 400px; height: 100%; float: right; margin-right: 80px;}
+
+
+.mianBattery{ width: 100%; height: auto; padding-top: 20px; border-top: 1px solid rgb(239, 239, 239); background-color: rgb(255, 255, 255);}
+.mostTitle{ width:100%; height: 90px;}
+.mianBatteryTitle a{ background-image: url("images/battery_03.png"); background-position: 0 50%; background-repeat: no-repeat; }
+.mostTitle a{ display: block; width: 151px; height: 50px; padding: 0 0 0 70px; margin-left: 20px;  color: rgb(102, 102, 102); font-size: 18px; font-weight: 500; line-height: 50px; text-transform: uppercase; letter-spacing: 1px;}
+.mianBatteryContent{ width: 100%; height: 425px; background-image: url("images/umcfeatures.jpg"); background-position: 0 -4px;}
+.mianBatteryRight{ float: right; width: 400px; height: 100%; margin-right: 80px; }
+
+#mianStyling{ width: 100%; height: auto; padding-top: 20px; background-color: rgb(255, 255, 255); border-top: 1px solid rgb(239, 239, 239);}
+.mianStylingTitle a{ background-image: url("images/styling_03.png"); background-position: 0 50%; background-repeat: no-repeat;}
+#mianStyling1{ width: 100%; height: 480px; background-color: red; background-image: url("images/styling-hero.jpg"); background-position: 100% 50%; background-repeat: no-repeat;}
+.mianStyling1Left span{ width: 340px;}
+.mianStyling1Right{ float: right;  width: 380px; height: 106px; padding: 0 0 0 40px; margin: 0 80px 0 10px;}
+.mianStyling1Right p{ margin-bottom: 20px;}
+#mianStyling2{ width: 100%; height: 500px; *height: 624px; padding: 104px 0 0 0; background-image: url("images/style-pano-roof.jpg"); background-repeat: no-repeat; background-position: 0% 100%;}
+.mianStyling2Top{ width: 380px; height: 208px; padding: 0 0 0 80px; margin: 0 10px; float: left;}
+.mianStyling2Top span{ float: left;}
+.mianStyling2Top p{ display: block; width: 380px; height: 140px;}
+#mianStyling3{ width: 100%; height: 280px; background-image: url("images/charge_port_03_0_0.png"); background-position: -20px 50%; background-repeat: no-repeat;}
+#mianStyling4{ width: 100%; height: 300px; }
+.mianStyling4Left{ float: left; width: 380px; height: 300px; margin-left: 80px;}
+.mianStyling4Right{ float: right; width: 380px; height: 300px; margin:0 80px 0 0px;}
+.mianStyling4Left img,.mianStyling4Right img{ float: left; width: 180px; height: 119px; margin: 0 20px 20px 0;}
+.mianStyling4Left p,.mianStyling4Right p{ margin-top: 40px; *margin-top: 0px;}
+#mianStyling5{ width: 100%; height: 345px; background-image: url("images/design_bkgd.jpg"); background-repeat: no-repeat;}
+.mianStyling5Right{ width: 250px; height: 300px; margin: 50px 20px 15px 0; float: right;}
+.mianStyling5RightM{ color: rgb(102, 102, 102); font-size: 13px; line-height: 20px; margin: 50px 0 20px 0;}
+.mianStyling5RightB{ width: 46px; height: 20px; padding: 6px 11px; background-image: url("images/bg_btn_red_h31.gif");}
+.mianStyling5RightB a{ color: #fff; line-height: 20px;}
+.mianStyling5RightB a:hover{ text-decoration: underline; }
+
+#mainInterior{ width: 100%; height: auto; background-color: #fff; padding-top: 20px; border-top: 1px solid rgb(239, 239, 239);}
+.mianInteriorTitle a{ background-image: url("images/interior_03.png"); background-position: 0 50%; background-repeat: no-repeat;}
+
+#mainInterior1{ width: 800px; *width: 960px; height: 620px; text-align: center; padding:0 80px; background-position: 0 100%; background-repeat: no-repeat; background-image: url("images/built_around_the_driver_20130418-2253.jpg");}
+.pLeft{ text-align: left;}
+#mainInterior2{ width: 800px; *width: 960px; height: 200px; padding: 40 80px 0 80px;}
+.mainInterior2Title{ width: 220px; height: 150px; float: left;}
+.mainInterior2ContentC{ width: 220px; *width: 260px; height: 153px; padding: 0 0px 0 40px; margin: 0 10px; float: left;}
+#mainInterior3{ width: 800px; *width: 960px; height: 620px; padding: 0 80px; text-align: center;}
+.mainInterior3Content li{ float: left; width: 180px; height: 259px; margin-right: 10px;}
+.mainInterior3Content{ width: 800px; height: 520; }
+.mainInterior3CDiv{ width: 140px; height: 100px; background-repeat: no-repeat; background-image:url("images/features-interior-touchscreen-image-map_v20130319.png"); margin-left: 30px;}
+.mainInterior3CDiv1{ background-position: 0 0;}
+.mainInterior3Content p{ width: 180px; height: 100px; margin-top: 10px;}
+.mainInterior3Content .mainTitlePerbig{ width: 180px; height: 31px;}
+.mainInterior3CDiv2{background-position: 0 -110px;}
+.mainInterior3CDiv3{ background-position: 0 -220px; }
+.mainInterior3CDiv4{ background-position: 0 -330px;}
+.mainInterior3CDiv5{background-position: 0 -440px;}
+.mainInterior3CDiv6{ background-position: 0 -550px;}
+.mainInterior3CDiv7{ background-position: 0 -660px;}
+#mainInterior4{ width: 960px; height: 551px; }
+#mainInterior4 img{ width: 100%; height: 100%;}
+.mainInterior3Bottom{ width: 100%; height: 20px;}
+
+#mainSafety{ width: 100%;height: auto; background-color: #fff; padding-top: 20px; border-top: 1px solid rgb(239, 239, 239); }
+.mianSafetyTitle a{ background-image: url("images/safety_03.png"); background-repeat: no-repeat;}
+#mainSafety1{ width: 800px; *width: 960px; padding: 0 80px; height: 600px; background-image: url("images/safety_battery.jpg"); background-position: 0 100%;}
+#mainSafety2{ width: 800px; height: 500px; *width: 960px; padding: 0 80px; margin-top: 50px; background-image: url("images/structure.jpg"); background-position: 100% 50%; background-repeat: no-repeat; }
+.mainSafety2Left{ float: left; width: 300px; height: 100%; }
+.mainSafety2Center{ float: left; width: 200px; margin-left: 40px; margin-top: 40px;}
+.mainSafety2Right{ float: right; width: 200px;}
+#mainSafety3{ width: 100%; height: 385px; background-image: url("images/safety_traction_0.jpg"); background-repeat: no-repeat;}
+.mainSafety3Right{ float: right; width: 380px; height: auto; margin-right: 80px; margin-top:40px;}
+.mainSafety3Right h2,.mainSafety3Right div,.mainSafety3Right p{ color: #fff;}
+
+#mainEnvironment{ width: 960px; height: auto; background-color: #fff; border-top: 1px solid rgb(239, 239, 239); padding-top: 20px;}
+.mianmainEnvironmentTitle a{ background-image: url("images/environment_03.png"); background-repeat: no-repeat; background-position: 0 50%;}
+#mainEnvironment1{ width: 100%; height: 555px; background-image: url("images/environment_anza_0.png"); background-repeat: no-repeat;}
+.mainEnvironment1Right{ float: right; width: 300px; height: 100%; margin-right: 80px;}
+.mainEnvironment1Right p{ margin-top: 20px;}
+
+#mainFooter{ width: 920px; height: 74px; *height: 112px; margin: 0 auto 65px auto; padding: 19px 0; background-color: rgb(242, 242, 242);}
+.mainFooterp1{ margin: 0 129px; color: rgb(51, 51, 51); font-size: 24px; line-height: 20px; text-align: center; font-weight: 300; margin-bottom: 13px;}
+.mainFooterp2{ text-align: center; color: rgb(102, 102, 102); font-size: 13px; line-height: 20px;}
+/*****************************main end***********************************/
+
+/*****************************footer***********************************/
+#footerContent{ width: 960px; height: 100%; margin: 0 auto;}
+#footerTop{ width: 100%; height: 155px; *height: 178px; padding-top: 23px;}
+#footerBottom{ width: 100%; height: 42px;}
+.footerTopul1{ float: left; width: 160px; height: 127px; text-align: left;}
+.footerMostATitle{ display: block; width: 160px; height: 14px; color: #fff; font-size: 12px; font-weight: 700; line-height: 14px; text-transform: uppercase; margin-bottom: 4px;}
+.footerTopul1Bottom{ width: 100%; height: 30px; margin-top: 50px;}
+.footerTopul1Bottom li{ float: left; width: 27px; height: 27px; margin-right: 4px; cursor: pointer;}
+.footerTopul1Bottom1{ background-image: url("images/bg_twitter_normal.png");}
+.footerTopul1Bottom2{ background-image: url("images/bg_facebook_normal.png");}
+.footerTopul1Bottom3{ background-image: url("images/bg_google_normal.png");}
+.footerTopul1Bottom4{ background-image: url("images/bg_vimeo_normal.png");}
+.footerTopul2{ float: left; width: 800px; height: 113px; text-align: left;}
+
+.footerTopul2LiTitle{ width: 160px; height: 56px; float: left;}
+.footerTopul2LiContent a{ width: 160px; height: 15px; display: block; color: rgb(204, 204, 204); font-family: Arial,Helvetica,sans-serif; font-size: 12px; margin-bottom: 4px; line-height: }
+.footerBottom1,.footerBottom2,.footerBottom4{ display: inline-block; float: left; margin-left: 10px; height: 20px; width: auto; margin-top: 14px; padding-right:15px;}
+.footerBottom5{ display: inline-block; float: left;}
+.footerBottom1,.footerBottom2,.footerBottom3{ border-right: 1px solid #fff; text-align: center;}
+.footerBottom1 span,.footerBottom2 a{ color: rgb(204, 204, 204); font-family: Arial,Helvetica,sans-serif; line-height: 15px; }
+.footerBottom2 a,.footerBottom4 a{ color: #fff; display: block;}
+.footerBottom4 a{ display: block; padding-left: 25x; width: 120px; background-repeat: no-repeat; background-position: 0px 45%; background-image: url("images/icn_hk_flag_no_shadow_1.png"); }
+.footerBottom5{ width: }
+.footerBottom5Ul{ width: 171px; *width: 211px; height: 27px; *height: 42px; padding: 15px 20px 0 20px; background-image: url("images/footer_mytesla_bckg.png"); background-repeat: repeat-x;}
+.footerBottom5Ul li{ float: left; margin-right: 5px;}
+.footerBottom5UlLi1{ font-size: 11px; line-height: 14px; color: #fff; font-family: Arial,Helvetica,sans-serif;}
+.footerBottom5UlLi2{ color: rgb(204, 204, 204);font-size: 12px; line-height: 15px; font-family: Arial,Helvetica,sans-serif;}
+/*****************************footer end***********************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
