@@ -1,0 +1,176 @@
+<html>
+	<head>
+		<title>测试网页</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="description" content="this is a description"/>
+		<meta name-"author" content="name"/>
+		<meta name="keywords" content="key1,key2"/>
+		<link rel="shortcut icon" type="text/css" href="this is a image url">
+		<link rel="stylesheet" type="text/css" href="this is a css file"/>
+		<base href="this is the beginning of url"></base>
+		<base target="_blank"></base>
+		<script type="text/javascript" src="jquery-2.0.2.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				//test1$("input:not('#in1')").remove();
+				//test2$("tr:odd").remove();
+				//test2$("tr:eq(1)").remove();
+				//test2$("ul:eq(1)").remove();
+				//test2$("tr:gt(0)").remove();
+				//test3#(":header").css("color","red");
+				/*test4#("#run").click(function(){
+					$("div:not(:animated)").animate({margin:"+=20"},1000);
+				});*/
+				//$("ul:contains('li')").remove();
+				/*$(":focus").remove();
+				$(":empty").css("background-color","red");
+				$("td:parent").remove();*/
+				
+				/*$("tr:visible").remove();
+				$("tr:hidden").show();*/
+				//$("div[id='test']").remove();
+				//$("ul li:first-child").remove();
+				// $(":input").remove();
+				//$("#in1").attr({"type":"radio","checked":"checked"});
+				/*$("input[type='checkbox']").prop({ disabled: true,checked:true});*/
+				//$("input[type='checkbox']").prop({"disabled":"true"});
+				// $("input[type-'checkbox']").prop({checked:true});
+				// $("input[type='checkbox']").prop("checked",function(i,val){
+				// 	return !val;
+				// });
+				/*$("input[type='checkbox']").removeProp("type");
+				$("#test").addClass("test");
+				$("#test").removeClass();*/
+				// var ele=$("#test").html("<b>wo shi yi zhi xiaoxiaoniao</b>");
+				
+				/*$("p").text("<b>erewr<b>");	
+				var ele=$("input").val("nihao");
+				
+				$('input:text.items').val(function() { return this.value + ' ' + this.className; });
+				$("p").append("<b>wo shi yi zhi xiaoxiaoniao</b>");
+				$("p:last").offset({ top: 50, left: 600 });	*/
+				// var p = $("p:last"); var offset = p.offset(); p.html( "left: " + offset.left + ", top: " + offset.top );
+				/*var n=3;		
+				$("p").each(function(n){
+					//alert("dsf");
+					$(this).html("this1"+n);
+				});*/
+				/*var a=$("p").length;
+				alert(a);*/
+				/*$("ul")
+  .append("<li>" + $("ul").context + "</li>")
+  .append("<li>" + $("ul", document.body).context.nodeName + "</li>");*/
+     //alert($('li').index(document.getElementById('bar'))); //1，传递一个DOM对象，返回这个对象在原先集合中的索引位置
+//alert($('li').index($('#bar'))); //1，传递一个jQuery对象
+/*alert($('li').index($('li:gt(0)'))); //1，传递一组jQuery对象，返回这个对象中第一个元素在原先集合中的索引位置
+alert($('#bar').index('li')); //1，传递一个选择器，返回#bar在所有li中的做引位置
+alert($('#bar').index()); //1，不传递参数，返回这个元素在同辈中的索引位置。
+
+*/
+			    /*$("div").html(function(){
+			    	$("div").get(););
+			    }	*/
+			   /*alert($("div").data("blah")) ;  // undefined
+				$("div").data("blah", "hello");  // blah设置为hello
+				alert($("div").data("blah"));  // hello
+				$("div").data("blah", 86);  // 设置为86
+				$("div").data("blah");  //  86
+				$("div").removeData("blah");  //移除blah
+				$("div").data("blah");  // undefined
+*/
+				/*$(window).resize(function(){
+					alert("stop it");
+				});
+				$(window).scroll(function(){
+					alert("nonnnno");
+				});*/
+				/*$(":input").select(function(){
+					alert("sdf");
+				});*/
+				/*$(".p2").fadeTo(2000,0.5,function(){
+					alert("animate done!");
+				});*/
+				/*$("#btn").click(function(){
+					$("#btnE").animate({borderWidth:"+=10px",fontSize:"30px"},2000,"swing").delay(8000);
+				});
+				$("#btns").click(function(){
+					$("#btnE").stop();
+				});*/
+
+
+			});
+	
+			 var count = 0;
+			  $("#btn").click(function(){
+			      $("strong").toggleClass("highlight", count++ % 3 == 0);
+			  });
+		</script>
+		<style type="text/css">
+			.test{ font-size: 23px; color:red;}
+			#btnE{width: 800px; height: 500px; border:1px solid #ccc;}
+		</style>
+	</head>
+	<body>
+		<strong>jQuery 代码:</strong>
+		<p class="p2">sdfsafaaaaaaaaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa df</p>
+		<button id="btn">click me!</button>
+		<button id="btns">click me!</button>
+		<div id="btnE">aclick me hou </div>
+		<ul>
+			  <li id="foo">foo</li>
+			  <li id="bar">bar</li>
+			  <li id="baz">baz</li>
+		</ul>
+		<img src="test1.jpg"/> <img src="test2.jpg"/>
+		<p></p>
+		<!--test1-->
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p>Hello</p>
+		<p>2nd Paragraph</p>
+		<input type="checkbox"/>
+		<input type="checkbox"/>
+		<input type="checkbox"/>
+		<input type="checkbox"/>
+		<div id="test">sdfsdf</div>
+		<input id="in1" /><br/>
+		<input id="in2" type="radio"/>
+		<div id="test2" class="dsfs">我是一只小小鸟</div>
+		<!--test1 end-->
+
+		<!--test2-->
+			<table>
+				<tr><td>Header 1</td></tr> <tr><td>Value 1</td></tr> <tr><td>Value 2</td></tr>
+			</table>
+			<ul>
+				<li> li1</li>
+				<li> li2</li>
+				<li> li3</li>
+			</ul>
+			<ul>
+				<li> li1</li>
+				<li> li2</li>
+				<li> li3</li>
+			</ul>
+		<!--test2 end-->
+
+		<!--test3-->
+			<h1>Header 1</h1> 
+			<p>Contents 1</p> 
+			<h2>Header 2</h2> 
+			<p>Contents 2</p>
+		<!--test3 end-->
+		<!--test4-->
+			<button id="run">Run</button><div></div>
+		<!--test4 end-->
+		<!--test5-->
+		<table> <tr><td style="display:none">Value 1</td><td></td></tr> <tr><td>Value 2</td><td></td></tr> </table>
+		<!--test5 end-->
+		<!--test6-->
+		<img />
+		<input id="t"/>
+		<!--test6 end-->
+	</body>
+<html>

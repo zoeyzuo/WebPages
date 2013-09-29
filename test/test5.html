@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title></title>
+    
+    <script src="../index/Jquery-1.9.1.js" type="text/javascript"></script>
+    <script>
+        $(function () {
+            alert($(window).height());
+            $("#miniNav").css("top", $(window).height() - $("#miniNav").height() + "px");
+
+            $(document).scroll(function () {
+                $("#miniNav").css("top", $(window).scrollTop() + $(window).height() - $("#miniNav").height() + "px");
+            });
+        });
+    </script>
+    <style>
+        *{ margin:0; padding:0;}
+        #miniNav{ width:100%; height:30px; border-bottom:1px solid #ccc; border-top:1px solid #ccc; background-color:#eaeaea; position:absolute; z-index:1;}
+        #all{ width:1000px; height:800px;  border:1px solid #ccc; margin:auto;}
+    </style>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="miniNav"></div>
+    <div id="all">
+    
+    </div>
+    </form>
+</body>
+</html>

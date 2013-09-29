@@ -1,0 +1,128 @@
+*{ margin: 0; padding: 0;}
+ul,li{ list-style: none;}
+img{ border:0;}
+body{ font-size: 12px; font-family: 宋体; text-align: center; }
+input{ border: 0px;}
+a{ text-decoration: none;} 
+input{border: 0px;}
+#topper{ width: 1348px; height:54px; background-image: url("images/headbg_index.png"); background-repeat: repeat-x; }
+#main{  width: 1004px; height: 641px; margin: 0 auto; border-right: 1px solid rgb(240, 241, 243); border-bottom: 1px solid rgb(240, 241, 243); }
+#footer{ width: 1004px; height: 99px; padding: 0 0 50px 0; margin: 0 auto;}
+
+/***********************top **************************/
+#topNav{ width: 1005px; height: 53px; margin: 0 auto;}
+#topperLeft{ float: left; width:141px; height: 40px; margin: 5px 31px 0 16px; display: block; background-image: url("images/kx-logo-index.png"); }
+
+#topperRight1{ float: right; width: 203px; height: 25px; padding: 14px 0 0 0; }
+#topperRight2{ float: right; width: 200px; height: 52px; margin-right: 2px;}
+
+#topperRight1Searchs{ width: 200px; height: 23px; background-color: rgb(243, 243, 243); border:1px solid rgb(243, 243, 243);}
+#topR1SearchInput{ width: 170px; height: 23px; padding: 0 0 0 5px; *padding: 3px 0 0 5px; color: rgb(153, 153, 153); background-image: url("images/searchbg2.gif"); background-repeat: no-repeat; float: left;}
+#topR1SearchButton{ width: 24px; height: 23px; background-image: url("images/spt_head_12.png"); background-position: -25px -1000px; background-repeat: no-repeat; float: left; border-left: 1px solid rgb(243, 243, 243);}
+
+.topR2Right{ width: 24px; *width: 48px; height: 15px; padding: 18px 13px 19px 11px; line-height: 15px; display: block; float: left;  text-decoration: none; color: #fff;}
+.topR2Right:hover{ background-color: #eb4953;} 
+#topR2RightDao{ width: 24px; height: 15px; float: left; position: relative; }
+
+#daoHangMore{ width: 201px; height: 216px; border: 1px solid rgb(155,155,155); border-top: 0px; position: absolute; left: -155px; top: 52px; z-index: 2; display: none; background-color: #fff;}
+.daoHangMoreUL{ height: 216px; border-right: 1px solid #ccc;}
+#daoHangMore2{ border:none;}
+#daoHangMore a{ display: block; width: 65px; height: 27px; *width: 99px; padding-left: 35px; background-image:url("images/spt_head_12.png"); background-position: 0 -300px; background-repeat: no-repeat; color: rgb(51,51,51); line-height: 27px; text-align: left; }
+#daoHangMore a:hover{ background-color: #eb4b55;}
+#daoHangMore1{  width: 100px; float: left;}
+#daoHangMore2{  width: 99px; float: right;}
+/***********************top end***********************/
+
+/***********************footer1***********************/
+#footer1{ width: 1004px; height: 40px; line-height: 40px; text-align: left;}
+#footer1 a,.forgetPWD,.Idlogin,#focusShowUl span{ color: rgb(51, 102, 153);  }
+#footer1 a:hover,.forgetPWD:hover,.Idlogin:hover,#focusShowUl span:hover{ text-decoration: underline;}
+/***********************footer1 end***********************/
+
+/***********************footer2***********************/
+#footer2{ width: 1004px; height: 59px; line-height: 29px; background-color: rgb(240, 239, 239); text-align: center;}
+#footer2,#footer2 a,.mostFont{color: rgb(153, 153, 153);  }
+#moreBanBen{ float: right;}
+/***********************footer2 end***********************/
+
+/***********************main left***********************/
+#mainLeft{ width: 210px;  height: 620px; *height: 640px; box-shadow:0 0 3px rgba(0,0,0,0.3); border:1px solid rgb(240, 245, 250); border-top: 0px; float: left; padding: 20px 0 0 20px; *padding: 30px 0 0 3px; background-image: url("images/left_bg.png"); background-position: 0 2%; background-color: rgb(240, 245, 250); background-repeat: repeat-x;}
+.loginText{ width: 195px;  height: 36px; margin-top: 15px; line-height: 13px; *line-height: 18px; }
+.loginTextT{ width:190px;  height: 36px; color: rgb(153, 153, 153); border:1px solid rgb(173, 182, 201); padding:8px 21px 8px 8px; font-size: 14px;  }
+#loginPic{ position: relative;}
+#closePic{ width: 13px; height: 13px; display: block; position: absolute; background-image: url("images/del_account.gif"); left:168px; top:12px; display: none;}
+
+.forgetPWD{ float: right;}
+.loginText span,.loginText input{ float: left; margin-right: 3px; }
+#rememberPWD{ height: 16px;}
+.btn{ width:190px; height: 36px; color: #fff; font-weight: bold; font-size: 14px;}
+#loginBtn{ background-image:url("images/login_btn_01.png"); background-position: 0 -70px;}
+hr{ width: 190px; color: #ccc; margin:20px 0 0 0;}
+#loginSign{ background-image:url("images/login_btn_01.png"); background-position: -200px -70px; }
+.loginTextSign{ margin-top: 20px;} 
+.loginTextMore{ height: 20px;}
+.loginTextMoreC{ margin-top: 0px;}
+.moreLogin{ width: 31px; height: 20px; display: block; float: left; background-image: url("images/login_ico2.png"); background-repeat: no-repeat;}
+#moreLogin1{ background-position: 0 0;}
+#moreLogin2{ background-position: 0 -60px;}
+#moreLogin3{ background-position: 0 -19px;}
+.kaixinWangKeHu{ width: 190px; height: 160px; *height: 180px; padding: 80px 0 0 0; *padding: 95px 0 0 0; background-image: url("images/aClient_spread_login.jpg"); background-repeat: no-repeat;}
+#iphoneD{ background-image: url("images/KXaClient_down_link02.png"); background-position:0 0;}
+#AndroidD{ background-image: url("images/KXaClient_down_link02.png"); background-position:0 -95px;}
+#moreBanBen{ text-decoration: none;}
+#moreBanBen:hover{ text-decoration: underline;}
+/***********************main left end***********************/
+
+/***********************main right***********************/
+#mainRight{ width: 750px; height: 640px; float: right; text-align: left; }
+#mainRTop{ width: 750px; height: 30px; padding-top: 50px; }
+#mainRBottom{ width: 750px; height: 500px; margin-top: 20px;}
+h1{ text-align: left; color: rgb(105, 105, 105); font-size: 20px; }
+#mainRBLeft{ float: left; width: 300px; height: 450px; margin-left: 5px;}
+#mainRBRight{ float: right; width: 430px; height: 450px;}
+.mainRBLeftMostDiv{ width: 300px; height: 31px; margin-top: 15px; position: relative;}
+.focusShow{ display: block; width: 250px; height: 25px; line-height: 25px; border:1px solid rgb(177, 186, 204); background-color: #efefef; position: absolute; left:305px; top:1px; display: none; }
+.spanRed{ color: red;}
+.foucesShowSpecial{ width: 466px; height: 127px; left: 72px; top:31px; text-align: center;}
+#focusShowUl{ width: 442px; height: 75px; margin: 6px 6px 6px 10px; background-color: #fff; border:1px solid #ccc;}
+#focusShowUl span{ width: 24px; height: 15px; line-height: 15px; cursor: pointer; display: block; margin: 3px 6px; float: left;}
+#placeBtn{ width: 68px; height: 29px; display: block; float: right; margin: 3px 10px 0 0; font-size: 14px; line-height: 20px;}
+
+.mainRBLeftName{ width: 72px; height: 26px; padding: 2px 0 0 0; line-height: 26px; font-size: 14px; float: left;}
+.mainRBLeftTextSpan{ width: 224px; height: 31px; background-color: #fff;   display: block; float: left;}
+.mainRBLeftText,.mainRBLeftTextP{ width: 224px; height: 31px; padding: 3px; border:1px solid rgb(177, 186, 204);  background-color: transparent; line-height: 19px; }
+.followEmail{ margin:6px 0 0 72px;}
+.mainRBLeftMostDivS1{ margin-top: 10px;}
+.mainRBLRadio{ float: left; margin: 5px 3px 0 0;}
+.mainRBLSelectSpanAll{ float: left; height: 23px; background-color: #fff;}
+.mainRBLSelect{ width: 100%; height: 23px;  display: block; float: left;  padding: 3px;  border:1px solid rgb(177, 186, 204);  background-color: transparent;}
+.mainRBLSelectSpan1{ width: 72px; }
+.mainRBLSelectSpan2{ width:48px; }
+.mainRBLSelectSpan3{ width:48px; }
+.mainRBLSelectSpan{ float: left; font-size: 14px; line-height: 26px; height: 25px; }
+.radiospan{ width: 50px;}
+.nowLogin{ width: 169px; height: 32px;margin:20px 0 0 72px; *margin:20px 0 0 36px; background-image: url("spr_reg.png");}
+#nowLoginB{ width: 169px; height: 32px;  background-image: url("images/spr_reg.png"); background-position: 0 0; font-size: 14px; color: #fff; font-weight: 700;}
+
+#mainRBRAll{ width: 390px; height: 390px; background-color: rgb(249,249,249); border: 1px solid rgb(227,227,227); margin-top: 15px;}
+#mainRBRTop{ width: 360px; height: 80px; margin-left: 15px; }
+#mainRBRPic{ width: 380px; height: 300px; background-image: url("images/reg_r_pic02.jpg"); background-repeat: no-repeat; margin-left: 20px; }
+.mainRBRTUl{  width: 120px; height: 60px; margin-top: 15px; background-repeat: no-repeat; float: left;}
+.mainRBRTLi{ width: 36px; height: 54px; cursor: pointer; margin-right: 1px; float: left;  background-image: url("images/spr_reg_num02.png");}
+#mainRBRTLi1{ background-position: -1px -63px; }
+#mainRBRTLi2{ background-position: -1px -426px;}
+#mainRBRTLi3{ background-position: -1px -124px;}
+#mainRBRTLi1{ background-position: -1px -63px;}
+#mainRBRTLi2{ background-position: -1px -426px;}
+#mainRBRTLi3{ background-position: -1px -124px;}
+#mainRBRTLi1{ background-position: -1px -63px;}
+#mainRBRTLi2{ background-position: -1px -426px;}
+#mainRBRTLi3{ background-position: -1px -124px;}
+#agreeID{ display: block; margin-top: 1px; *margin-top: -3px; float: left;}
+/***********************main right end***********************/
+
+
+
+
+
+

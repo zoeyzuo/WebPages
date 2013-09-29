@@ -6,9 +6,10 @@ body{ background-color: rgb(51, 51, 51); font-family: 微软雅黑;}
 #main2{ width: 1349px; height: 300px; background-color: rgb(34, 34, 34); padding: 12px 0 16px 0; margin-bottom: 15px;}
 #main3{ width: 1200px; height: 471px; margin: 0 auto; background-color: #000; text-align: left;}
 #main4{ width: 1208px; height: 1387px; margin: 10 auto 0 auto; }
-#main5{ border:1px solid #ccc; width: 1200px; height: 60px; margin: 0 auto;}
-#foot{ border:1px solid #ccc; width: 1202px; height: 305px; margin: 0 auto;}
-#footer{ border:1px solid #ccc; width: 100%; height: 140px;}
+#main5{ width: 1201px; height: 471px; margin: 0 auto; }
+#main6{ width: 1200px; height: 60px; margin: 58px auto 0 auto;}
+#foot{ width: 100%; height: 305px; *height: 450px; position: absolute; margin-top: 50px; padding: 130px 0 15px 0; background-color: #000; background-image: url("images/media_b.gif"); background-repeat: repeat-x; background-position: 50% 0;}
+#footer{ width: 100%; height: 140px;}
 /*********************整体布局 end********************************/
 
 /*********************toper********************************/
@@ -80,7 +81,7 @@ h1 a{ display: block; width: 154px; height: 44px; background-image: url("images/
 .main2LeftH3 a{ color: #fff; font-size: 14px; line-height: 22px; font-weight: 700;}
 .main2LeftH31{ display: none;}
 .main2LeftLiContentRight p,.main2LeftLiContentRight a{ color: rgb(204, 204, 204); line-height: 18px; font-size: 12px;}
-.main2LeftLiContent a:hover,.main4Left1TopTitle a:hover,.main3Top a:hover,.mostPicA:hover,.main2LeftH3 a:hover,.main2LeftLiContentLeft a:hover,.main2CenterRightUl a:hover{ color: rgb(255,102,0);}
+.main2LeftLiContent a:hover,.main4Left1TopTitle a:hover,.footRight a:hover,.main3Top a:hover,.mostPicA:hover,.main2LeftH3 a:hover,.main2LeftLiContentLeft a:hover,.main2CenterRightUl a:hover{ color: rgb(255,102,0);}
 .main2LeftLiContentLeftPic1{ background-image: url("images/44e9c869-e819-4fd2-9e2a-75b044b8e3b8.jpg");}
 .main2LeftLiContentLeftPic2{ background-image: url("images/0bad5e95-9a36-43d1-b998-fe05962ad276.jpg");}
 .main2LeftLiContentLeftPic3{ background-image: url("images/d68a4ca6-6a29-461f-b581-2296bdc1d723.jpg");}
@@ -162,46 +163,119 @@ h1 a{ display: block; width: 154px; height: 44px; background-image: url("images/
 .main4Left1pic3{ height: 369px;}
 .main4Left1pic3A{ height: 345px;}
 
-.main4Left1LiA2
+.main4Left4Top{ height: 576px;}
+
+
+.main4Left1LiA2{background-image: url("images/256b77cd-8a3e-4fd2-9057-74ecaa6a5d17.jpg");}
+.main4Left1LiA3{ background-image: url("images/8894b7bc-8c1d-463e-be8b-2bfbdfa378d5.jpg");}
+.main4Left1LiA4{ background-image: url("images/63a5f2c5-0e52-4402-a7b4-cfdcea016582.jpg");}
 /*********************main4 end********************************/
 
 
 /*********************main5********************************/
+.main5Left1{ width: 132px; height: 402px; float: left; margin: 30px 1px 0 0;}
 
+.main5Left3{ width: 414px; height: 432px; float: left; margin: 28px 1px 0 0;}
+.main5Left4{ width: 196px; height: 428px; float: left; margin: 0px 1px 0 0;}
+.main5Left5{ width: 193px; height: 443px; float: left; margin: 28px 1px 0 0;}
+
+.main5Left1Title{ width: 132px; height: 129px; }
+.main5Left1Title a{ width: 100%; height: 100%; display: block;}
+.main5Left1Title img{ width: 100%; height: 100%;}
+
+.main5pic1{ width: 132px; height: 272px; }
+.main5Pic{ position: relative;}
+.main5picA1{ width: 100%; height: 100%;}
+.main5picA img{ width: 100%; height: 100%;}
+
+.main5picA span{ display: none; position: absolute; width: 116px; height: 256px; border:8px solid rgb(255,102,0); bottom: 0px; right: 0px;}
+.main5PicP{ display: none; background-image: url("images/opacity.png"); z-index: 2px; position: absolute; bottom: 8px; right: 8px;}
+.main5PicP1{ width: 116px;}
+.main5PicP a{ color: #000; width: 100%; height: 35px;  display: block; font-size: 14px; line-height: 35px; }
+
+.main5Left2{ width: 261px; height: 455px; float: left; margin-right: 1px;}
+.main5picA2 span{ width: 245px; height: 439px;}
+.main5PicP2{ width: 245px;}
+
+.main5pic3{ width: 414px; height: 160px; margin-bottom:1px;}
+.main5picA3 span{ width: 398px; height: 144px;}
+.main5PicP3{ width: 398px;}
+
+.main5pic4{ float: left; width: 196px; height: 255px; margin-right: 1px;}
+.main5picA4 span{ width: 180px; height: 249px;}
+.main5picP4{ width: 180px;}
+
+.main5pic5{ float: left; width: 217px; height: 119px; margin-bottom: 1px;}
+.main5picA5 span{ width: 201px; height: 113px;}
+.main5picP5{ width: 201px;}
+
+.main5pic6{ float: left; width: 217px; height: 150px;}
+.main5picA6 span{ width: 201px; height: 134px; }
+.main5picP6{ width: 201px;}
+
+.main5pic7{ width: 196px; height: 307px; margin-bottom: 1px;}
+.main5picA7 span{ width: 180px; height: 291px; }
+.main5picP7{ width: 180px;}
+
+.main5pic8{ width: 196px; height: 119px;}
+.main5picA8 span{ width: 180px; height: 103px;}
+.main5picP8{ width: 180px;}
+
+.main5pic9{ width: 193px; height: 205px; margin: 0 0 1px 0;}
+.main5picA9 span{ width: 177px; height: 189px;}
+.main5picP9{ width: 177px;}
+
+.main5pic10{ width: 193px; height: 236px;}
+.main5picA10 span{ width: 177px; height: 220px;}
+.main5picP10{ width: 177px;}
 /*********************main5 end********************************/
 
 
+/*********************main6********************************/
+.main6Ul{ }
+.main6Li{ width: 48px; height: auto; margin-right: 5px; position: relative; float: left;}
+.main6Li a{ width: 48px; height: 48px; display: inline-block;  background-image: url("images/subnav.png");}
+.main6Li span{ color: #fff; font-size: 12px; height: 19.2px;}
+.main6Li div{ width: 48px; height: 65px; background-color: rgb(255,102,0); position: absolute; top: 0; left: 0; display: none;}
+.main6LiA1{ background-position: 5px -50px; background-color: #000; }
+.main6LiDA1{ background-position: 5px 5px; }
+
+.main6LiA2{ background-position: -46px -50px; background-color: #000; }
+.main6LiDA2{ background-position: -46px 5px; }
+
+.main6LiA3{ background-position: -100px -50px; background-color: #000; }
+.main6LiDA3{ background-position: -100px 5px; }
+
+.main6LiA4{ background-position: -151px -50px; background-color: #000; }
+.main6LiDA4{ background-position: -151px 5px; }
+.main6LiA5{ background-position: -203px -50px; background-color: #000; }
+.main6LiDA5{ background-position: -203px 5px; }
+.main6LiA6{ background-position: -259px -50px; background-color: #000; }
+.main6LiDA6{ background-position: -259px 5px; }
+.main6LiA7{ background-position: -310px -50px; background-color: #000; }
+.main6LiDA7{ background-position: -310px 5px; }
+.main6LiA8{ background-position: -364px -50px; background-color: #000; }
+.main6LiDA8{ background-position: -364px 5px; }
+.main6LiA9{ background-position: -418px -50px; background-color: #000; }
+.main6LiDA9{ background-position: -418px 5px; }
+.main6LiA10{ background-position: -470px -50px; background-color: #000; }
+.main6LiDA10{ background-position: -470px 5px; }
+.main6LiA11{ background-position: -524px -50px; background-color: #000; }
+.main6LiDA11{ background-position: -524px 5px; }
+.main6LiA12{ background-position: -578px -50px; background-color: #000; }
+.main6LiDA12{ background-position: -578px 5px; }
+/*********************main6 end********************************/
+
+
 /*********************foot********************************/
+#footMain{ width: 1202px; height: 305px; margin: 0 auto;}
+.footLeft{ width: 76px; *width: 92px; height: 78px; *height: 90px; padding: 10px 8px ; background-color: rgb(51,51,51); color: #fff; font-size: 30px; line-height: 33px; font-weight: 400px; }
+.footRight{ width: 1095px; height: 305px; float: right;}
+.footRightP1{ width: 1095px; height: 240px; text-align: left;}
+.footRightP1 a{ float: left; width: 150px; height: 30px; display: inline-block; margin-right: 6px; color: rgb(102, 102, 102); font-size: 14px; line-height: 30px;}
+.footRightP2{ width: 560px; height: 30px; *width: 570px; *height: 41px; float: right; color: rgb(102, 102, 102); font-size: 14px; line-height: 30px; font-style:  italic; margin-top: 30px; border-top:1px solid rgb(168,168,168);}
 
+#gotoTop{ width: 37px; height: 37px; position: absolute; bottom: 20px; right: 20px;}
+#gotoTop a{ display: block; width: 37px; height: 37px;  background-image: url("images/toTop.gif"); background-position: -42px 0;}
 /*********************foot end********************************/
-
-
-/*********************footer********************************/
-
-/*********************footer end********************************/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

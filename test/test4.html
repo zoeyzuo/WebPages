@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<title>对个别单词的解释说明</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="author" content="">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<base url=""></base>
+		<base target="_blank"></base>
+		<link rel="stylesheet" type="text/css" href="../index/common.css">
+		<script type="text/javascript" src="../index/Jquery-1.9.1.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				initEvents();
+				
+			});
+			function initEvents(){
+				$(".show").mouseover(function(){
+					$(this).append('<div class="tip">'+ $(this).attr("showText") +'</div>');
+					var heightT=$(this).find(".tip").height();
+					var widthT=($(this).find(".tip").width()-$(this).width())/2;
+					$(this).find(".tip").css({"top":-heightT+"px","left":-widthT+"px"});
+				});
+				$(".show").mouseout(function(){
+					$(this).find(".tip").remove();
+				});
+				
+			}
+		</script>
+		<style type="text/css">
+			*{ margin: 0; padding: 0;}
+			body{ text-align: center; width: 100%; width: 100%;}
+			#all{ margin-top: 200px;}
+			p{ font-size: 26px; font-family: Arail; text-align: left; text-indent: 50px;}
+			.show{ color:#00ee22; position: relative;}
+			.tip{ width: 200px; text-indent: 50px; height: auto; background-color: #000; color: #fff; position: absolute;left: 0; top: 0; font-size: 20px;}
+		</style>
+	</head>
+	<body>
+		<!-- <a id="goBack" href="../index.html"></a> -->
+		<div id="all">
+			<p>Your time is limited, so don't waste it living someone else's life. Don't let the noise of others'opinions drown out your own inner voice. <span class="show" showText="你的时间有限,不要浪费于重复别人的生活。不要让别人的观点淹没了内心的声音。">meaning </span> The greatest pleasure in life is doing what people say you cannot do. <span class="show" showText="人生一大乐事就是做到别人认为你做不到的事！">meaning </span>The only person standing in your way is you. It`s time to let it go. Lose yourself.<span class="show" showText="你的本性在阻碍你。赶走她，释放你自己！">meaning </span>
+			</p>
+			<p>Your attitude, not your aptitude, will determine your altitude. <span class="show" showText="决定你人生高度的，不是你的才能，而是你的态度。">meaning </span> We do not need magic to transform our world. We carry all of the power we need inside ourselves already. <span class="show" showText="改变世界不需要魔法，只要我们发挥出内在的力量。">meaning </span></p>
+			
+		</div>
+	</body>
+</html>

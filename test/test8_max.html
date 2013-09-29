@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>test8_max</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui-1.10.3.custom.min.css">
+		<script type="text/javascript" src="../index/Jquery-1.9.1.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+		<style type="text/css">
+		*{margin: 0; padding: 0;}
+			#pic{ width: 100px; height: 100px; border:1px solid #ccc; position: relative;}
+			#pic a{ display: block; width:100%; height: 100%; position: relative; left: 0; top: 0; background-image: url("images/pic_max.jpg"); }
+			
+		</style>
+		<script type="text/javascript">
+			$(function(){
+
+				$("#picImg").mouseover(function(e){
+					var x=e.pageX*10;
+					var y=e.pageY*10;
+					//alert(x+"  "+ y);
+					$("#picImg").css({"background-image": 'url("images/pic_big.jpg")',"background-position":x+"px "+y+"px"});
+				});
+				$("#picImg").mouseout(function(){
+					$("#picImg").css({"background-image": 'url("images/pic_max.jpg")'});
+				});
+
+			});
+		</script>
+	</head>
+	<body>
+		<div id="pic"><a id="picImg" href="#"></a></div>
+	</body>
+</html>

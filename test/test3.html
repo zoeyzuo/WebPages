@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>左侧导航栏</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="author" content="">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<base url=""></base>
+		<base target="_blank"></base>
+		<link rel="stylesheet" type="text/css" href="../index/common.css">
+		<script type="text/javascript" src="../index/Jquery-1.9.1.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				initEvents();
+				
+			});
+			function initEvents(){
+				$(window).scroll(function(){
+					$("#all").css("top",$(window).scrollTop()+100+"px");
+				});
+				$("#allRight").click(function(){
+					var attr1=$(this).attr("openState");
+					if (attr1=="no") {
+						$("#all").animate({"left":0},1000,function(){
+							$("#allRight").css( "background-image",'url("images/diraction2.gif")');
+						});
+						$(this).attr("openState","yes");
+					}else{
+						$("#all").animate({"left":-252},1000,function(){
+							$("#allRight").css( "background-image",'url("images/diraction1.gif")');
+						});
+						$(this).attr("openState","no");
+					}
+				});
+			}
+		</script>
+		<style type="text/css">
+			*{ margin: 0; padding: 0;}
+			body{ text-align: center; width: 100%; width: 100%;}
+			#all{ width: 300px; height: 5500px; position: absolute; left: -252px; top:100px;}
+			#allLeft{ width: 250px; height:500; background-color: #333; float: left;  }
+			#allRight{ width: 30px; height: 30px; background-image: url("images/diraction1.gif"); float: left; background-color: #000;}
+		</style>
+	</head>
+	<body>
+		<!-- <a id="goBack" href="../index.html"></a> -->
+		<div id="all">
+			<div id="allLeft"></div>
+			<span id="allRight" openState="no"></span>
+		</div>
+	</body>
+</html>

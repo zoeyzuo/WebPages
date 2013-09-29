@@ -36,16 +36,30 @@ function initEvents(){
 		$(this).children(".main2LeftLiContent").css("display","block");
 		$(this).children(".main2LeftH3").css("display","none");
 	});
+	
+	//main5中，随着鼠标的移入和移出，图片上的边框和介绍的显示和消失
+	$(".main5Pic").hover(function(){
+		$(this).find(".main5picA span,.main5PicP").css("display","block");
+	},function(){
+		$(this).find(".main5picA span,.main5PicP").css("display","none");
+	});
+
+	//main6中，随着鼠标的移入和移出，介绍的显示和隐藏
+	$(".main6Li").hover(function(){
+		$(this).find("div").css("display","block");
+	},function(){
+		$(this).find("div").css("display","none");
+	});
 
 
 }
 
 
-//main1中，幻灯片实现代码
+//普通的幻灯片实现代码
 var index=1;
 function slide(){
 	var leftL=(index-1)*824;
-	$("#main1CLeftUl").animate({"left":"-"+leftL+"px"},500);
+	
 	$(".main1NumA").css({"top":"0", "background-color":"#fff", "color": "#000"});
 	$(".main1NumA"+index).css({"top":"-10px", "background-color":"#000", "color": "#fff"});
 	index++;
@@ -54,7 +68,7 @@ function slide(){
 	};
 }
 
-//main3中，循环幻灯片
+//漂亮的循环幻灯片
 var indexBeauty=1;
 function slideBeauty(){
 	for( i=1; i<=8;i++)

@@ -1,0 +1,76 @@
+<html>
+	<head>
+		<title>手风琴效果练习</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="author" content="">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<base url=""></base>
+		<base target="_blank"></base>
+		<link rel="stylesheet" type="text/css" href="../index/common.css">
+		<script type="text/javascript" src="../index/Jquery-1.9.1.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				initEvents();
+			});
+
+			function search(){
+				$("#searchContent").slideDown(400);
+			}
+			function initEvents(){
+				$("input:text").val("");
+				$("#searchs").keyup(function(e){
+					var val=$(this).val();
+					if (val=="") {
+						$(this).css("background-image","url('images/searchbg.gif')");
+					}else{
+						$(this).css("background-image","none");
+					}
+					if (e.keyCode==13) {
+						search();
+					};
+				});
+				$("#searchPic").click(function(){
+					search();
+				});
+				$(".close").click(function(){
+					$("#searchContent").slideUp(400);
+				});
+				$("#searchPic").hover(function(){
+					$(this).css("background-image","url('images/search2.gif')");
+				},function(){
+					$(this).css("background-image","url('images/search1.gif')");
+				});
+				$(".close").hover(function(){
+					$(this).css("background-image","url('images/close2.gif')");
+				},function(){
+					$(this).css("background-image","url('images/close1.gif')");
+				});
+			}
+		</script>
+		<style type="text/css">
+			*{ margin: 0; padding: 0;}
+			body{ text-align: left;}
+			#all{ width: 200px; height: 1500px; border: 1px solid #ccc;}
+			#content1{ width: 100%; height:300px;  }
+			#searchs{ width: 100%; height: 30px; padding: 6px 36px 6px 6px; background-color: transparent; background-image: url("images/searchbg.gif"); background-repeat: no-repeat; background-position:0 -2px; position: relative;}
+			#searchPic{ display: block; width: 29px; height: 29px; position: absolute; left: 170px; top:0; background-image: url("images/search1.gif"); cursor: pointer; }
+			#searchContent{ width: 100%; height: 250px; border: 1px solid #ccc; box-shadow: 0 0 3px ragb(0 0 0 0.3); background-color: #eee; display: none;}
+			.close{ display: block; float: right; width: 30px; height: 30px; background-image: url("images/close1.gif"); cursor: pointer;} 
+		</style>
+	</head>
+	<body>
+		<!-- <a id="goBack" href="../index.html"></a> -->
+		<div id="all">
+			<div id="content1">
+				<div id="search">
+					<input type="text" id="searchs">
+					<span href="#" id="searchPic"></span>
+				</div>
+				<div id="searchContent">
+					<span href="#" class="close"></span>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

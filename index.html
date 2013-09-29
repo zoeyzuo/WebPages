@@ -1,0 +1,154 @@
+<html>
+	<head>
+		<title>友情链接</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="网页,DIV,CSS,JS,jQuery,jQuery UI,AJAX">
+		<meta name="description" content="This is a link!"> 
+		<meta name="author" content="zoey">
+		<link rel="stylesheet" type="text/css" href="index/common.css">
+		<script type="text/javascript" src="index/Jquery-1.9.1.js"></script>
+		<script type="text/javascript" src="index/common.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				initEvents();
+			});
+			function initEvents(){
+				$("#searchText").focus(function(){
+					$(this).next().slideDown(400);
+				});
+				$("#CloseBtn").click(function(){
+					$("#flowSearch").slideUp(400);
+				});
+				$("#flowSearch a").click(function(){
+					var val=$(this).text();
+					var nameI=$(this).attr("nameIs");
+					$("#searchText").val(val);
+					$("#searchText").attr("nameIs",nameI);
+					$("#flowSearch").slideUp(400);
+
+				});
+				$("#SearchBtn").hover(function(){
+					$(this).css("background-position","-400px -112px");
+				},function(){
+					$(this).css("background-position","-400px -70px");
+				}).mousedown(function(){
+					$(this).css("background-position","-400px -154px");
+				});
+				$("#SearchBtn").click(function(){
+					var val1=$("#searchText").attr("nameIs");
+					var href;
+					/*alert("c" + val1 + "sd");
+					if (val1=="qq") {alert(val1);};*/
+					switch(val1){
+						case "qq":href="qq/qq.html"; break;
+						case "happyNet":href="happyNet/happyNet.html"; break;
+						case "tumblr":href="tumblr/tumblrLogin.html"; break;
+						case "test1":href="test/test1.html"; break;
+						case "test2":href="test/test2.html"; break;
+						case "test3":href="test/test3.html"; break;
+						case "test4":href="test/test4.html"; break;
+						case "Within":href="themeForest_within/themeForest.html"; break;
+						case "jobTo":href="职来职往/jobTo.html"; break;
+						case "tennisNet":href="tennisNet/tennisNet.html"; break;
+						case "tesla":href="tesla_Motors/tesla.html"; break;
+						case "MSN":href="MSN/MSN.html"; break;
+						case "gitHub":href="https://github.com/zoeyzuo/WebPages.git"; break;
+						default:href="#";break;
+					}
+					//alert(href);
+					$("#SearchBtn a").attr("href",href); 
+				});
+			}
+
+		</script>
+		<style type="text/css">
+			body{text-align: center; font-family: 宋体;}
+			/******************搜索区******************/
+			#all{ width: 900px; height: 560px; margin:auto; text-align: center; padding: 50px;}
+			#searchs{ position: relative; width: 605px; height: 50px; margin:0 auto; }
+			#searchs span{ font-size: 16px; font-weight: 700; display: block; width: 100px; height: 36px;float: left; line-height: 36px; }
+			#searchText{ display: block;float: left; width: 400px; height: 36px; border:1px solid #ccc; line-height: 30px; padding: 5px 6px 5px 15px; font-size: 16px; box-shadow: 0 0 1px rgba(0,0,0,0.3) inset; border-right: 0px;}
+			#flowSearch{ width: 397px; height: auto; border:1px solid #ccc; background-color: #fff; position: absolute; left: 100px; top: 36px; text-align: left; padding: 15px 0 0 0; box-shadow: 0 0 1px rgba(0,0,0,0.3) inset; border-top: 0px; display: none;}	
+			#flowSearchUl{ width: 360px; height: auto; margin-left: 15px; }
+			#flowSearch a{ height: 25px; line-height: 25px; font-size: 16px; display: block; color: #000;}
+			#flowSearch a:hover{ background-color: rgb(145,204,218); cursor: pointer; color: #fff;}
+			#CloseBtn{ width: 68px; height: 29px; display: block; float: right; margin:10px; font-size: 14px; line-height: 20px;}	
+			#SearchBtn{ width: 98px; height: 36px; float: left; margin:0 0 0 -2px; background-image: url("index/index_images/login_btn_01.png"); background-position: -400px -70px; }
+			#SearchBtn a{ display: block; height: 36px; width: 100%; font-size:16px; font-weight: 700; color: #fff; line-height: 36px; }
+			/******************搜索区 end******************/
+			/******************Main******************/
+			#main{ width: 100%; height: 500px; margin: 0 auto;}
+			#main ul{ width: 100%; height: 100%; text-align: left;}
+			#main li{ float: left; width: 100px; height: 100px; margin: 10px 10px 0 0;}
+			#main img{ width: 100px; height: 80px; border:1px solid #ccc; border-radius: 5px;}
+			.mainWordA{ font-size: 12px; display: block; width: 100px; height: 20px; line-height: 20px; text-align: center; color: #000;}
+			.mainWordA:hover{ text-decoration: underline;}
+			/******************Main end******************/
+		</style>
+	</head>
+	<body>
+		<a id="goBack" href="../index.html"></a>
+		<div id="all">
+			<div id="searchs">
+				<span>作品集：</span>
+				<input type="text" nameIs="" value="请选择..." id="searchText">
+				<div id="flowSearch">
+					<ul id="flowSearchUl">
+						<li><a nameIs="gitHub" href="#">gitHub链接</a></li>
+						<li><a nameIs="qq" href="#">腾讯首页</a></li>
+						<li><a nameIs="happyNet" href="#">开心网</a></li>
+						<li><a nameIs="Within" href="#">ThemeForest_Within</a></li>
+						<li><a nameIs="jobTo" href="#">职来职往-智联招聘</a></li>
+						<li><a nameIs="tennisNet" href="#">网球网</a></li>
+						<li><a nameIs="tesla" href="#">tesla_Motors</a></li>
+						<li><a nameIs="MSN" href="#">MSN中文网</a></li>
+						<!-- <li><a nameIs="tumblr" href="#">Tumblr</a></li>
+						<li><a nameIs="test1" href="#">练习1</a></li>
+						<li><a nameIs="test2" href="#">练习2</a></li>
+						<li><a nameIs="test3" href="#">练习3</a></li>
+						<li><a nameIs="test4" href="#">练习4</a></li>  -->
+					</ul>				
+					<button id="CloseBtn">关闭</button>
+				</div>
+				<div id="SearchBtn"><a href="#">click me!</a></div>
+			</div>
+			<div id="main">
+				<ul>
+					<li>
+						<a href="https://github.com/zoeyzuo/WebPages.git"><img alt="gitHub" src="index/index_images/github.png"></a>
+						<a href="https://github.com/zoeyzuo/WebPages.git" class="mainWordA">gitHub</a>
+					</li>
+					<li>
+						<a href="qq/qq.html"><img alt="腾讯首页" src="index/index_images/qq.png"></a>
+						<a href="qq/qq.html" class="mainWordA">腾讯首页</a>
+					</li>
+					<li>
+						<a href="happyNet/happyNet.html"><img alt="开心网" src="index/index_images/happyNet.png"></a>
+						<a href="happyNet/happyNet.html" class="mainWordA">开心网</a>
+					</li>
+					<li>
+						<a href="themeForest_within/themeForest.html"><img alt="ThemeForest_Within" src="index/index_images/themeForest.png"></a>
+						<a href="themeForest_within/themeForest.html" class="mainWordA">ThemeForest_Within</a>
+					</li>
+					<li>
+						<a href="职来职往/jobTo.html"><img alt="职来职往" src="index/index_images/jobTo.png"></a>
+						<a href="职来职往/jobTo.html" class="mainWordA">职来职往</a>
+					</li>
+					<li>
+						<a href="tennisNet/tennisNet.html"><img alt="网球网" src="index/index_images/tennisNet.png"></a>
+						<a href="tennisNet/tennisNet.html" class="mainWordA">网球网</a>
+					</li>
+					<li>
+						<a href="tesla_Motors/tesla.html"><img alt="tesla_Motors" src="index/index_images/tesla_motors.png"></a>
+						<a href="tesla_Motors/tesla.html" class="mainWordA">tesla_Motors</a>
+					</li>
+					<li>
+						<a href="MSN/MSN.html"><img alt="MSN" src="index/index_images/MSN.png"></a>
+						<a href="MSN/MSN.html" class="mainWordA">MSN中文网</a>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
