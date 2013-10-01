@@ -29,7 +29,6 @@ function initEvents(){
 			$(this).find("p").css({"color":"rgb(163, 163, 163)"});
 			$(this).css("background-image", 'url("css/images/banner_bg1.gif")');
 		}
-
 	}).click(function(){
 		var clickI= $(this).attr("clickIt");
 		if (clickI!="y") {
@@ -43,7 +42,30 @@ function initEvents(){
 		
 	});
 
+	slide1other();
+	
+	//main right2
+	$(".main2RLeft1Content li").hover(function(){
+		$(this).find("p").show();
+	},function(){
+		$(this).find("p").hide();
+	});
+	//main right3
+	$(".main2RLeft2Ul li").hover(function(){
+		$(this).find("span").hide();
+	},function(){
+		$(this).find("span").show();
+	});
 
+	tab();
+	hoverShow();
+	setPositon();
+	setInterval("slide2()",1000);
+	slide2Dir();
+	setInterval("slide3()",2000);
+	slide3Other();
+}
+function slide1other(){
 	//幻灯片1，mainRight1 ，鼠标移入和移出时，方向图标的显示和隐藏
 	var handle=setInterval("showLight()",2000);
 	$(".main2RTopUl").hover(function(){
@@ -79,23 +101,77 @@ function initEvents(){
 	},function(){
 		handle=setInterval("showLight()",2000);
 	});
-	//main right2
-	$(".main2RLeft1Content li").hover(function(){
-		$(this).find("p").show();
+}
+function slide3Other(){
+	$(".main2RLeft4Bottom1").hover(function(){
+		$(this).css("background-image","url('css/images/ad_right2.gif')");
 	},function(){
-		$(this).find("p").hide();
+		$(this).css("background-image","url('css/images/imgs/ad_right1.gif')");
 	});
-	//main right3
-	$(".main2RLeft2Ul li").hover(function(){
-		$(this).find("span").hide();
+	$(".main2RLeft4Bottom2").hover(function(){
+		$(this).css("background-image","url('css/images/ad_left2.gif')");
 	},function(){
-		$(this).find("span").show();
+		$(this).css("background-image","url('css/images/imgs/ad_left1.gif')");
 	});
-
-	tab();
-
-	hoverShow();
-	setPositon();
+	$(".main2RLeft4Bottom div").click(function(){
+		var val3=$(this).attr("value");
+		if (val3=="1") {
+			if (index3==1) {
+				index=4;
+			}else{
+				index3--;
+			}	
+			
+		}else{
+			if (index3==4) {
+				index=1;
+			}else{
+				index3++;
+			}	
+		}
+		$(".main2RLeft4Content").hide();
+		$(".main2RLeft4Content"+index3).show();
+	});
+}
+var index3=1;
+function slide3(){
+	$(".main2RLeft4Content").hide();
+	$(".main2RLeft4Content"+index3).show();
+	index3++;
+	if (index3==5) {
+		index3=1;
+	};
+}
+function slide2Dir(){
+	$(".main2RLeft3LR").click(function(){
+		var val4=$(this).attr("value");
+		if (val4<=2) {
+			if (slide2Index==1) {
+				slide2Index=9;
+			};
+			slide2Index--;
+			$(".main2RLeft3Center ul").animate({left:"+112px"},1000);
+			$(".main2RLeft3Center ul").append($(".main2RLeft3CenterLi"+slide2Index));
+		}else{
+			if (slide2Index>=9) {
+				slide2Index=1;
+			};
+			slide2Index++;
+			$(".main2RLeft3Center ul").animate({left:"-112px"},1000);
+			$(".main2RLeft3Center ul").append($(".main2RLeft3CenterLi"+slide2Index));
+		}
+	});
+}
+var slide2Index=1;
+function slide2(){
+	$(".main2RLeft3Center ul").animate({left:"-112px"},1000);
+	
+	$(".main2RLeft3Center ul").append($(".main2RLeft3CenterLi"+slide2Index));
+	slide2Index++;
+	/*$(".main2RLeft3CenterLi"+index).hide();*/
+	if (slide2Index==10) {
+		slide2Index=1;
+	};
 }
 //页面滚动时
 function setPositon(){
