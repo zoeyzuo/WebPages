@@ -1,11 +1,10 @@
 /***********************************整体布局*******************************/
 body{ background-color: rgb(250, 200, 215); background-image: url("images/body_bg.jpg"); background-position: 50% 0px;  background-repeat: no-repeat;}
-#top{ width: 100%; height: 39px; position: fixed; background-image: url("images/bg_nav.png"); background-repeat: repeat-x;}
+#top{ width: 100%; height: 39px; position: fixed; z-index: 99; background-image: url("images/bg_nav.png"); background-repeat: repeat-x;}
 #topT{ background-image: url("images/bg_line.png"); background-position: 50% 38px; background-repeat: repeat-x;}
-#main{ width: 100%; height: 14559px; padding-top:60px;}
-#mainMain{ width: 980px; height: 14225px; background-image: url("images/repeat_bg_y.png"); background-repeat: repeat-y; margin: 0 auto;}
-#foot{ width: 980px; height: 90px; background-color: #fff; margin: 20px auto 0 auto;}
-#footer{ border: 1px solid #ccc; width: 940px; *width: 980px; height: 175px; *height: 205px; margin: 20px auto 0 auto; padding: 20px 20px 10px 20px; background-color: #fff; background-image: url("images/footer_bg.png"); background-position: 0 100%; background-repeat: no-repeat;  }
+#main{ width: 100%; height: 4369px; padding-top:60px; }
+#mainMain{ width: 980px; height: 4125px; background-image: url("images/repeat_bg_y.png"); background-repeat: repeat-y; margin: 0 auto;}
+#footer{ position: relative; border: 1px solid #ccc; width: 940px; *width: 980px; height: 175px; *height: 205px; margin: 20px auto 0 auto; padding: 20px 20px 10px 20px; background-color: #fff; background-image: url("images/footer_bg.png"); background-position: 0 100%; background-repeat: no-repeat;  }
 /***********************************整体布局 end*******************************/
 
 /****************************top**************************************/
@@ -81,13 +80,9 @@ body{ background-color: rgb(250, 200, 215); background-image: url("images/body_b
 .mainLeft3Ul a{ width: 150px; height: 21px; display: block; line-height: 21px; color: rgb(51, 51, 51);}
 .mainLeft3Ul img{ width:16px; height: 16px; display: block; float: left; margin: 2px 10px 0 20px;}
 
-
-
-
-
-#mainCenter{ float: left; width: 600px; height: 10485px; *height: 10563px; padding: 28px 0 50px 0; }
-#mainRight{ }
-.mainCenter1{ width: 560px; height: 162px; *width: 600px; *height: 173px; margin-left: 20px;}
+#mainCenter{ text-align: left; float: left; width: 560px; *width: 600x; height: auto;  padding: 28px 20px 50px 20px; }
+#mainRight{ width: 230px; height: 2034px; *height: 2054px; padding-top: 20px; float: right;}
+.mainCenter1{ width: 560px; height: 162px; *height: 173px;}
 .mainCenter1Title{ width: 560px; height: 22px;}
 .mainCenter1TLeft{ width: 224px; height: 22px; float: left; background-image: url("images/all_iconbtn.png");}
 .mainCenter1TRight{ width: 300px; height: 22px; float: right; }
@@ -109,31 +104,186 @@ body{ background-color: rgb(250, 200, 215); background-image: url("images/body_b
 .mainCenter1BRightR{ width: 80px; height: 28px; color: rgb(230, 65, 65); border: 1px solid rgb(230, 65, 65); font-size: 16px; line-height: 26px; display: block; background-color: rgb(230, 65, 65); float: right;}
 .mainCenter1BRightR span{ width: 80px; height: 26px; border: 1px solid rgb(245, 115, 115); display: block; color: #fff;}
 .mainCenter1BLeftI76{ line-height: 26px; float: right;}
+
+.mainCenter2{ width: 560px; height: 80px; margin-top: 20px;}
+.mainCenter2 img{ width: 100%; height: 100%;}
+.mainCenter3{ width: 560px; height: 68px; margin-top: 20px;}
+.mainCenter3Top{ width: 560px; height: 44px; position: relative;}
+.mainCenter3TopUl{ width: 560px; height: 32px; border-bottom: 2px solid rgb(234, 20, 41); }
+.mainCenter3TopD{ width: 44px; height: 8px; background-color: #fff; margin-top: -8px; background-image: url("images/icon.png"); background-position: -500px -75px;}
+.mainCenter3TopUl li{ float: left; width: 50px; height: 32px;}
+.mainCenter3TopUl a{ width: 30px; *width: 50px; height: 30px; display: block; padding: 0 10px; font-size: 14px; line-height: 30px; color: rgb(51, 51, 51);}
+.mainCenter3TopUl .a{ font-weight: 700;}
+.mainCenter3TopRight{ width: 302px; height: 22px; float: right; margin-top: -12px;}
+.mainCenter3TopRight1{  background-color: #fff; width: 190px; height: 20px; border: 1px solid rgb(217, 217, 217); border-radius: 10px; float: left;}
+.mainCenter3TopRight1 input{ width: 130px; height: 20px; color: rgb(128, 128, 128); line-height: 15px; padding: 2px 0; float: left; border:0; margin-left: 5px;}
+.mainCenter3TopRight1R{ width: 35px; height: 22px; float: left;}
+.mainCenter3TopRight1R a{ width: 19px; height: 20px; display: block; background-image: url("images/icon.png"); background-position: -72px -172px; float: right; }
+.mainCenter3TopRight2{ width: 98px; height: 20px; float: right; border: 1px solid rgb(217, 217, 217); background-color: rgb(242, 242, 242); border-radius: 10px;}
+.mainCenter3TopRight2 a{ width: 79px; height: 28px; display: block; color: rgb(51,51,51); line-height: 20px; }
+.mainCenter3TopRight2 i{ width: 16px; height: 16px; margin: 2px 3px 0 8px; display: block; background-image: url("images/icon.png"); background-position: -150px -50px; float: left;}
+.mainCenter3Bottom{ width: 560px; height: 22px;}
+.mainCenter3Bottom ul{ width: 560px; height: 22px; }
+.mainCenter3Bottom li{ width: 44px; height: 22px; float: left;}
+.mainCenter3Bottom a{ width: 24px; *width: 44px; height: 22px; padding: 0 10px; display: block; color: rgb(235, 100, 120); line-height: 22px;}
+.mainCenter3Bottom a:hover,.mainCenter4MainContent4 a:hover,.mainCenter4MainContent2 a:hover{ text-decoration: underline;}
+#mainCenter3Bottomli{ background-color: rgb(235, 100, 120); color: #000; }
+
+.mainCenter4{ width: 560px; height: auto; padding-top: 20px; text-align: left; }
+.mainCenter4Main{ width: 560px; height: 191px; *height: 202px; padding-bottom: 11px; border-bottom: 1px solid rgb(230, 230, 230);}
+.mainCenter4MainPic{ width: 50px; height: 50px; float: left;}
+.mainCenter4MainContent{ width: 495px; height: auto; float: right;}
+.mainCenter4MainContent1{ width: 100%; height: 16px;}
+.mainCenter4MainContent1 a{ color: rgb(51, 51, 51); font-size: 14px; font-weight: 700; line-height: 16px; float: left;}
+.mainCenter4MainContent1 i{ cursor: pointer; width: 14px; height: 14px; display: block; float: left; background-image: url("images/icon.png");}
+.mainCenter4MainContent1 .i1{ background-position: -300px -175px;}
+.mainCenter4MainContent1 .i2{ background-position: -300px -425px;}
+.mainCenter4MainContent1 .i3{ background-position: -300px -75px;}
+.mainCenter4MainContent2{ width: 100%; height: auto; *height: 34px; padding: 4px 0; font-family: Arial,Helvetica,sans-serif; color: rgb(51, 51, 51); line-height: 23px; font-size: 14px;}
+.mainCenter4MainContent3{ width: 100%; height: auto; *height: 116px; padding-bottom: 15px; position: relative; }
+.mainCenter4MainContent3 .smallPic{ cursor: url("images/big.cur"),auto;}
+.mainCenter4MainContent4{ width: 100%; height: 14px;}
+.mainCenter4MainContent4Right{ width: 239px; height: 14px; float: right;}
+.mainCenter4MainContent4Left{ width: auto; height: 14px; float: left;}
+.mainCenter4MainContent4 a,.mainCenter4MainContent2 a{ color: rgb(235, 100, 120); line-height: 13.5px; }
+.mainCenter4MainContent2 a{ font-size: 14px; line-height: 23px;}
+.mainCenter4MainContent4 span{ color: rgb(128, 128, 128); line-height: 13.5px;}
+.mainCenter4Main1{ height: 118px; *height: 129px;}
+#mainCenter4MainContent4RightSA{ display: block; width: auto; height: auto; float: left;}
+#mainCenter4MainContent4RightSA em{ display: block; float: left; width: 13px; height: 14px; background-image: url("images/icon.png"); background-position: -75px 0px;}
+.mainCenter4Main2{ height: 229px; *height: 240px;}
+.bigPic{ display: none; position: absolute; top: 0; left: 0; z-index: 2;}
+.bigPic img{ width: 400px; height: 500px; cursor: url("images/small.cur"),auto;}
+
+.mainCenter4Main3{ height: 239px; *height: 250px;}
+.mainCenter4Main4{ height: 274px; *height: 285px;}
+.mainCenter4Main5{ height: 220px; *height: 231px;}
+.mainCenter4Main6{ height: 210px; *height: 221px;}
+.mainCenter4Main7{ height: 210px; *height: 221px;}
+.mainCenter4MainContents5{ border:1px solid rgb(230, 230, 230); height: 224px; }
+.mainCenter4MainContent5{ width: 472px; height: 200px; margin: 10px 0; overflow: hidden;}
+.mainCenter4MainContent5 ul{ width: 860px; height: 200px; position: relative; left: 0; top: 0;}
+.mainCenter4MainContent5 li{ position: relative; float: left; border-right:1px solid rgb(230, 230, 230); width: 121px; *width: 141px; height: 180px; cursor: pointer; padding: 0 10px 0 10px;}
+.mainCenter4MainContent5Pic{ width: 120px; height: 120px; display: block;}
+.mainCenter4MainContent5Pic img{ width: 100%; height: 100%;}
+.mainCenter4MainContent5A2{ display: block; width: 120px; height: 34px; overflow: hidden; margin-top: 5px;}
+.mainCenter4MainContent5A3{ display: block; width: 120px; height: 26px; margin-top: 5px;}
+.mainCenter4MainContent5A2,.mainCenter4MainContent5A3{ color: rgb(128, 128, 128); font-size: 12px; line-height: 17px;}
+.mainCenter4MainContent5A3 em{ width: 13px; height: 14px; display: block; background-image: url("images/icon.png"); background-position: -75px 0px; float: right;}
+.close{ display: none; width: 12px; height: 12px; background-image: url("images/icon.png"); background-position: -100px -300px; position: absolute; top:3px; right: 13px; z-index: 2;}
+.close:hover{  background-position: -100px -25px;}
+.mainCenter4MainContentsTitle5{ width: 472px; *width: 492px; height: 16px; *height: 26px; padding: 10px 10px 0 10px; }
+.mainCenter4MainContentsTitle5 span{ float: left; font-size: 14px; line-height: 16px; font-weight: 700; }
+.mainCenter4MainContentsTitle5 ul{ width: 72px; height: 16px; float: right;}
+.mainCenter4MainContentsTitle5 li{ float: left;}
+.mainCenter4MainContentsTitle5 a{ background-image: url("images/icon.png"); display: block;}
+.mainCenter4MainCT1,.mainCenter4MainCT4{ width: 22px; height: 16px;}
+.mainCenter4MainCT1 a,.mainCenter4MainCT4 a{ width: 16px; height: 16px; display: block; background-position: -75px -325px; }
+.mainCenter4MainCT2,.mainCenter4MainCT3{ width: 14px; height: 8px; margin-top: 4px; }
+.mainCenter4MainCT2 a,.mainCenter4MainCT3 a{ width: 8px; height: 8px; margin: 0 3px; background-position: -100px -275px;}
+.mainCenter4MainCT3 a{ background-position: -75px -300px;}
+.mainCenter4MainCT4 a{ background-position: -100px -350px; margin-left: 6px; cursor: pointer;}
+
+.mainRight1{ width: 230px; height: 136px;}
+.mainRight1Main{ width: 190px; height: 83px; margin: 0 20px;}
+.mainRight1MainL{ width: 80px; height: 81px; display: block; float: left; }
+.mainRight1MainL img{ width: 100%; height: 100%; border-radius: 5px;}
+.mainRight1MainR{ float: right; width: 100px; height: 36px; *height: 43px;  padding: 7px 0 0 0; text-align: left;}
+.mainRight1MainR1{ width: 100px; height: 16px; display: block; font-weight: 700; line-height: 16px; color: rgb(51,51,51);}
+.mainRight1MainR2{ display: block; width: 28px; *width: 34px; height: 9px; *height: 14px; padding: 5px 0 0 6px; background-image: url("images/level.png"); background-position: 0px -15px;}
+.mainRight1MainR2 span{ width: 26px; height: 10px; display: block; background-image: url("images/level.png"); background-position: 0 -170px;}
+.mainRight2Main{ width: 190px; height: 83px; margin: 0 20px;}
+.mainRight2Main li{ float: left; width: 24px; height: 33px; *width: 30px; padding: 0 5px 0 0; margin-right: 5px; border-right: 1px solid rgb(230, 230, 230); }
+.mainRight2MainLia{ width: 100%; height: 100%; color: rgb(51,51,51);}
+.mainRight2MainLia strong{ font-size: 20px; font-weight: 700;  }
+.mainRight2MainLia span{ font-size: 12px; font-style: normal;}
+#mainRight2MainLiS{ border-right: 0px;}
+.mainRight2{ width: 230px; height: auto; position: relative;}
+.change{ width: 55px; height: 20px; border-radius: 10px; color: rgb(51,51,51); line-height: 20px; position: absolute; top: -5px; right: 20px; border: 1px solid rgb(217, 217, 217); background-color: rgb(242, 242, 242)}
+.change:hover{ background-color: rgb(255, 160, 10); color: #fff;}
+.mainLeft2fld2{ width: 230px;}
+.mainLeft2fld2 legend{ font-size: 14px; font-weight: 700; color: rgb(51,51,51); line-height: 15.75px;}
+.mainRight2D1{ width: 190px; height: 95px; *width: 230px; *height: 107px; padding: 6px 20px;}
+.mainRight2D1T{ width: 190px; height: 50px;}
+.mainRight2D1TPic{ width: 50px; height:50px; display: block; float: left;}
+.mainRight2D1TPic img{ width: 100%; height: 100%;}
+.mainRight2D1TPicC{ width: 130px; height: 50px; float: right; text-align: left;}
+.mainRight2D1TPicC1{ line-height: 20px; color: rgb(51,51,51); }
+.mainRight2D1TPicC2{ width: 46px; height: 20px; border:1px solid rgb(217, 217, 217); color: rgb(51,51,51); background-color:rgb(242, 242, 242); display: block; }
+.mainRight2D1TPicC2 span{ width: 42px; height: 16px; display: block; *width: 46px; *height: 20px; padding: 2px 0px 0 4px; border:1px solid #fff; }
+.mainRight2D1TPicC2 em{ color: rgb(255, 160, 10); width: 9px; height: 19px; display: block; float: left; font-size: 16px; font-weight: 700; line-height: 14px; font-style: normal;}
+.mainRight2D1TPicC2:hover{ background-color: rgb(255, 160, 10); border:1px solid rgb(255, 160, 10);}
+.mainRight2D1B{ width: 174px; height: 20px; *width: 190px; *height: 22px; border: 1px solid rgb(230, 230, 230); margin: 8px 0 5px 0; background-color: rgb(242,242,242);}
+.mainRight2D1B p{ color: rgb(128, 128, 128); line-height: 20px; text-align: left; margin-left: 10px;}
+.mainRight2D2{ width: 190px; height: 14px; margin: 0px 20px 0 20px;}
+.mainRight2D2L{ float: left;}
+.mainRight2D2R{ float: right;}
+
+.mainRight3,.mainRight4{ width: 230px; height: auto; position: relative; margin-top: 20px;}
+.mainRight3Ul{ width: 190px; margin: 0 20px;}
+.mainRight3Ul li{ width: 190px; height: 22px;}
+.mainRight3Ul a{ color: rgb(235, 100, 120); line-height: 22px; float: left;}
+.mainRight3Ul span{ line-height: 22px; color: rgb(128, 128, 128); float: right;}
+#mainRight3UlAs{ float: right;}
+.mai1nRight4R1{ color: rgb(51, 51, 51); line-height: 20px;}
+.mai1nRight4R2{ line-height: 20px;}
+.mai1nRight4R2 a{ color: rgb(255, 160, 10);}
+.mai1nRight4R2 span{ color: rgb(128, 128, 128);}
+.mainRight4MainR{ margin-top: -8px; height: auto;}
+.mai1nRight4R4{ background-color: rgb(255, 160, 10); color: #fff;}
+.mainRight4D1B{ margin: 10px 0 0 20px;}
+.mai1nRight4R1:hover{ color: rgb(255, 160, 10);}
+.mainRight5{ width: 230px; height: 304px; margin-top: 20px;}
+.mainRight5Main{ position: relative; width: 184px; height: 260px; border:1px solid rgb(230, 230, 230); margin: 0 20px;}
+.mainRight5Main li{ display: none; float: left; width: 184px; height: 234px; cursor: pointer; }
+.mainRight5MainTitle{ width: 184px; height: 26px;}
+.mainRight5MainTitlea1{ width: 61px; height: 12px; display: block; margin: 7px 0; border-right: 1px solid rgb(224, 224, 224); color: rgb(102, 102, 102); font-size: 10px; line-height: 12px; float: left; text-align: left;}
+.mainRight5MainTitlea1 i{ background-repeat: no-repeat; background-image: url("images/T1v8msFkFcXXc79gfc-27-29.png"); background-position: 0 0; width: 9px; height: 9px; display: block; margin: 1px 3px 0 10px; float: left;}
+.mainRight5MainTitlea2 i{ background-position:-9px 0px; }
+.mainRight5MainTitlea3{ border:0; width: 60px;}
+.mainRight5MainTitlea3 i{ width: 13px; height: 10px;}
+.mainRight5MainTitlea3 .ir1{ background-position: 0px -9px;}
+.mainRight5MainTitlea3 .ir2{ background-position: 0px -19px;}
+.mainRight5MainTitlea3 .ir1:hover{ background-position: -14px -9px;}
+.mainRight5MainTitlea3 .ir2:hover{ background-position: -14px -19px;}
+.mainRight5MainUl{ text-align: left;}
+.mainRight5MainUl img{ width: 184px; height: 184px;}
+.mainRight5MainUl p{ color: rgb(102, 102, 102); line-height: 15px; height: 30px; width: 100%;}
+.mainRight5MainUl strong{ color: rgb(251, 68, 24); line-height: 18px;}
+.mainRight5Main .mainRight5MainUlliS{ display: block;}
+.mainRight5dirLR{ display: none; position: absolute; top: 106px; width: 18px; height: 25px; cursor: pointer; background-image: url("images/T1hHicFi4gXXaHAwfL-36-121.png");}
+.mainRight5dirL{ left: 0; background-position: 0px -36px;}
+.mainRight5dirR{ right: 0; background-position: 18px -36px;}
+.mainRight5dirL:hover{ left: 0; background-position: 0px -64px;}
+.mainRight5dirR:hover{ right: 0; background-position: 18px -64px;}
+.mainRight5No{ width: 26px; height: 26px; position: absolute; bottom: 60px; right: 5px; background-image: url("images/T1hHicFi4gXXaHAwfL-36-121.png"); background-position: 0px 26px;}
+.mainRight5No{ line-height: 26px; color: #000;}
+.mainRight5No span{ color: #fff;}
+.mainRight3 p{ width: 190px; height:auto; margin: 0 20px; color: rgb(51, 51, 51); line-height: 22px; text-align: left;}
 /****************************mainMain end**************************************/
 
-/****************************foot**************************************/
-
-/****************************foot end**************************************/
 
 /****************************footer **************************************/
-
-
 #footerTop{ width: 940px; height: 85px; text-align: left;}
 #footerTop ul{ width: 170px; height: 85px; float: left; margin-right: 18px;}
 #footerTop span,#footerTop a,.footerBottomleft a,.footerBottomleft span{ font-size: 12px; font-family: Arial,Helvetica,sans-serif; line-height: 20px; }
 #footerTop span,.footerBottomleft a,.footerBottomleft span{ color: #000;}
-#footerTop a,.mainCenter1TRight a,.footerBottomright a,.open a,.mainCenter1BLeftI6,.mainLeft3 a:hover,.mainLeft4 a:hover,.mainCenter1BLeftA:hover{ color: rgb(235, 100, 120);}
-#footerTop a:hover,.open a:hover,.mainCenter1TRight a:hover,.mainCenter1BLeftI6:hover{ text-decoration: underline;}
+#footerTop a,.mainCenter1TRight a,.footerBottomright a,.open a,.mainCenter1BLeftI6,.mainLeft3 a:hover,.mainLeft4 a:hover,.mainCenter1BLeftA:hover,.mainRight2D1TPicC1:hover,.mainRight2D2 a{ color: rgb(235, 100, 120);}
+#footerTop a:hover,.open a:hover,.mainCenter1TRight a:hover,.mainCenter1BLeftI6:hover,.mainRight2D2 a:hover{ text-decoration: underline;}
 #footerBottom{ width: 940px; height: 74px; margin-top: 15px; text-align: left;}
 .footerBottomleft{ width: 558px; height: 64px; *height: 74px; float: left; padding-top: 10px;}
 .footerBottomright{ width: 157px; height: 45px; *height: 73px; float: right; padding-top: 28px;}
 
-.footerBottomleft a:hover{ color: rgb(235, 100, 120);}
+.footerBottomleft a:hover,.mainRight1MainR1:hover,.mainRight2MainLia:hover,.mainRight2D1B a{ color: rgb(235, 100, 120);}
 .footerBottomright p{ width: 100%; height: 22px; margin-bottom: 5px;}
 .footerSleect{ width: 83px; height: 19px; padding: 1px; float: right;}
 .footerSleect option{ width: 73px; height: 15px; padding: 0 5px 0 3px;}
 .footerBottomright span{ color:rgb(128, 128, 128);}
-.footerBottomright a{ text-decoration: underline;}
+.footerBottomright a,.mainRight2D1B a:hover,.mainRight3Ul a:hover{ text-decoration: underline;}
+.goBack{ width: 22px; height: 85px; display: none; right:160px;  *display: block; position: fixed; top: 50px; background-color: rgb(242, 242, 242); border:1px solid rgb(204, 204, 204); *position: absolute; *right: -25px; *bottom:0; line-height: 12px; color: rgb(128, 128, 128);}
+.goBack:hover{ background-color: #fff;}
+.goBack em{ width: 12px; height: 12px; display: block; background-image: url("images/icon.png"); background-position: -75px -100px; margin:8px 5px; }
+
 /****************************footer end*************************************/
 
 

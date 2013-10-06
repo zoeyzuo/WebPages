@@ -1,0 +1,19 @@
+
+body{ font-family: "Helvetica Neue",Helvetica,Arial;}
+#top{ width: 100%; height: 86px;}
+#main{ width: 100%; height: 13605px;}
+#topT{ width: 100%; height: 22px; margin: auto; background-color: rgb(45, 17, 82);}
+#topTMain{ width: 1200px; height: 100%; margin: auto; }
+#topB{ border:1px solid #ccc; width: 1200px; height: 37px; *height: 64px; margin: auto; padding: 14px 0; }
+.topTMainUl li{ float: left; height: 19px; *height: 22px; padding-top: 3px; margin-left: 16px; float: left;}
+.topTMainUl a,.topTMainUl span{ display: inline-block; height: 16px; *height: 17px; padding-top: 1px; color: #fff; font-size: 13px; line-height: 16.25px;}
+
+#topTMainI{ display: block; float: left; width: 16px; height: 16px; margin: 0 5px 0 0; background-image: url("images/pc_icons_btns_sprite_0913_3pm.png"); background-position: -824px -31px;}
+#topTMainSpan{ float: left; width: 10px; height: 5px; *height: 7px; margin: 7px 0 0 5px; display: block; background-image: url("images/pc_icons_btns_sprite_0913_3pm.png"); background-position: -1px -15px; background-repeat: no-repeat;}
+#topTMainSpan1{ float: left;}
+.topBLeft{ width: 153px; height: 37px; margin-top: -8px; float: left;}
+.topBLeft a{ width: 142px; height: 54px; display: block; margin: 0 0 0px 10px; background-image: url("images/ai_marchingband_large_purple.png"); background-position: -6422px 0px; background-repeat: no-repeat;}
+.topBSearchs{ width: 635px; height: 34px;  float: left; margin-top: 1px;}
+.topBSearchsL{ width: 541px; height: 32px; border:1px solid rgb(206, 206, 214);}
+.topBSearchsL{ width: 533px; height: 32px; border:0; font-size: 17px; line-height: 32px;  }
+

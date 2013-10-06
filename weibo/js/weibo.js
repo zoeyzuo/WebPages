@@ -16,6 +16,18 @@ function initEvents(){
 	showTopRight1();
 	//maincenter1中，鼠标移入移出时，边框线的变化
 	changeBorder_mainCenter1();
+	//maincenter4中，鼠标移入和移出时，相应内容的显示和隐藏
+	showChangeMainCenter4();
+	//mainCenter4 中关闭的显示和隐藏
+	showCloseMainCenter4();
+	//mainCenter4 切换图片
+	changePicsMainCenter4();
+	//mainLeft2中 改变颜色
+	changeColorMainLeft2();
+	//mainRight5中，幻灯片
+	tabsMainRight5();
+	//body,返回顶部
+	gobackTop();
 }
 
 //top 中，鼠标移入移出时，显示和隐藏具体内容
@@ -118,9 +130,9 @@ function searchs(){
 	},function(){
 		$(this).parent().css("background-position","0px -5px");
 	});
-
 }
 
+//maincenter1中，鼠标移入移出时，边框线的变化
 function changeBorder_mainCenter1(){
 	$(".mainCenter1Text textarea").focus(function(){
 		$(this).parent().css("border-color","rgb(255,185,65)");
@@ -139,6 +151,128 @@ function changeBorder_mainCenter1(){
 	});
 }
 
+//maincenter4中，鼠标移入和移出时，相应内容的显示和隐藏
+function showChangeMainCenter4(){
+	$(".mainCenter4").hover(function(){
+		$(this).find(".mainCenter4MainContent1 a").css("color","rgb(235, 100, 120)");
+		$(this).find(".hide").show();	
+	},function(){
+		$(".mainCenter4MainContent1 a").css("color","rgb(51, 51, 51)");
+		$(this).find(".hide").hide();
+	});
+	$(".smallPic").click(function(){
+			$(this).next().show();
+	});
+	$(".bigPic").click(function(){
+		$(this).hide();
+	});
 
+}
 
+//mainCenter4 中关闭的显示和隐藏及删除图片
+function showCloseMainCenter4(){
+	$(".mainCenter4MainContent5 li").hover(function(){
+		$(this).find(".close").show();
+	},function(){
+		$(this).find(".close").hide();
+	});
+	$(".close").click(function(){
+		$(this).parent().hide();
+	});
+}
+
+//mainCenter4 切换图片,only one!
+function changePicsMainCenter4(){
+	var indexa=1,indexb=2;
+	$(".mainCenter4MainCT4 a").bind("click",function(){
+		if (indexa==1) {
+			$(".mainCenter4MainContent5 ul").css("left","-=470px;");
+			$(this).css("background-position","-75px -350px");
+			$(".mainCenter4MainCT1 a").css("background-position","-100px -325px");
+			$(".mainCenter4MainCT1 a").bind("click");
+			$(".mainCenter4MainCT2 a").css("background-position","-75px -300px");
+			$(".mainCenter4MainCT3 a").css("background-position","-100px -275px");
+			indexa=2;
+			indexb=1;
+		};
+		
+	});
+	$(".mainCenter4MainCT1 a").bind("click",function(){
+		if (indexb==1) {
+			$(".mainCenter4MainContent5 ul").css("left","+=470px;");
+			$(this).css("background-position","-75px -325px");
+			$(".mainCenter4MainCT4 a").css({"background-position":"-100px -350px","cursor":"pointer"});
+			$(".mainCenter4MainCT4 a").bind("click");
+			$(".mainCenter4MainCT3 a").css("background-position","-75px -300px");
+			$(".mainCenter4MainCT2 a").css("background-position","-100px -275px");
+			indexa=1;
+			indexb=2;
+		};	
+	});
+
+}
+//mainLeft2中 改变颜色
+function changeColorMainLeft2(){
+	$(".mainRight2D1TPicC2").hover(function(){
+		$(this).find("em").css("color","#fff");
+	},function(){
+		$(this).find("em").css("color","rgb(255, 160, 10)");
+	});
+}
+//mainRight5中，幻灯片
+var handle;
+function tabsMainRight5(){
+	$(".mainRight5Main").hover(function(){
+		$(this).find(".hide").show();
+	},function(){
+		$(this).find(".hide").hide();
+	});
+	$(".mainRight5Main").hover(function(){
+		clearInterval(handle);
+	},function(){
+		handle=setInterval("tabsFun()",2000);
+	});
+	$(".mainRight5dirLR").click(function(){
+		var val=$(this).attr("value");
+		if (val==1) {
+			if (IndexTabs==1) {
+				IndexTabs=9;
+			}else{
+				IndexTabs--;
+			}
+		}else{
+			if (IndexTabs==9) {
+				IndexTabs=1;
+			}else{
+				IndexTabs++;
+			}
+		}
+		$(".mainRight5MainUl li").hide();
+		$(".mainRight5MainUl li:nth-child("+IndexTabs+")").show();
+		$(".mainRight5No span").text(IndexTabs);
+	});
+	handle=setInterval("tabsFun()",1000);
+
+}
+var IndexTabs=1;
+function tabsFun(){
+	$(".mainRight5MainUl li").hide();
+	$(".mainRight5MainUl li:nth-child("+IndexTabs+")").css("display","block");
+	$(".mainRight5MainUl li:nth-child("+IndexTabs+")").animate({left:"184px"},"slow");
+	$(".mainRight5No span").text(IndexTabs);
+	IndexTabs++;
+	if (IndexTabs==10) {
+		IndexTabs=1;
+	};
+}
+//body,返回顶部
+function gobackTop(){
+	$(window).scroll(function(){
+		if ($(window).scrollTop()>=500) {
+			$(".goBack").css({"display":"block","top":"400px"});
+		}else{
+			$(".goBack").css({"display":"none"});
+		}
+	});
+}
 

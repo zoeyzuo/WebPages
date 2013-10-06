@@ -34,9 +34,6 @@ function initEvents(){
 	//大标题的索引的显示
 	$(window).scroll(function(){
 		if ($(window).scrollTop()>=260) {
-			/*var top=$(window).scrollTop();
-			$("#mainTitleUl").css({"position": "absolute", "top": top+"px", "left": "195px"});*/
-
 			$("#mainTitleUl").css({"position": "fixed", "top": "-80px", "left": "195px"});
 			$(".mainTitlesA7").css("display","block");
 		}else{
