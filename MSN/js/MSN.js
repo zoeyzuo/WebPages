@@ -50,16 +50,14 @@ function initEvents(){
 	},function(){
 		$(this).find("div").css("display","none");
 	});
-
-
 }
 
 
 //普通的幻灯片实现代码
 var index=1;
 function slide(){
-	var leftL=(index-1)*824;
-	
+	$(".main1CLeftLi").css("display","none");
+	$(".main1CLeftLi"+index).css("display","block");
 	$(".main1NumA").css({"top":"0", "background-color":"#fff", "color": "#000"});
 	$(".main1NumA"+index).css({"top":"-10px", "background-color":"#000", "color": "#fff"});
 	index++;

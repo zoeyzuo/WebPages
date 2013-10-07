@@ -1,19 +1,217 @@
 
-body{ font-family: "Helvetica Neue",Helvetica,Arial;}
+/************************常用样式*****************************/
+.mostColor1,.mainLeftUl a{ color: rgb(30, 38, 131);}
+.mostColor2{ color:rgb(50, 79, 225)}
+a:hover{ text-decoration: underline;}
+/************************常用样式 end*****************************/
+
+/************************整体布局*****************************/
+body{ font-family: "Helvetica Neue",Helvetica,Arial; font-weight: 300;}
 #top{ width: 100%; height: 86px;}
-#main{ width: 100%; height: 13605px;}
+#main{ width: 100%; height: auto;}
 #topT{ width: 100%; height: 22px; margin: auto; background-color: rgb(45, 17, 82);}
 #topTMain{ width: 1200px; height: 100%; margin: auto; }
-#topB{ border:1px solid #ccc; width: 1200px; height: 37px; *height: 64px; margin: auto; padding: 14px 0; }
-.topTMainUl li{ float: left; height: 19px; *height: 22px; padding-top: 3px; margin-left: 16px; float: left;}
-.topTMainUl a,.topTMainUl span{ display: inline-block; height: 16px; *height: 17px; padding-top: 1px; color: #fff; font-size: 13px; line-height: 16.25px;}
+#topB{ width: 1200px; height: 37px; *height: 64px; margin: auto; padding: 14px 0; }
+#mainMain{ width: 1200px; height: auto; margin: auto;}
+#mainLeft{ width: 153px; height: 624px; float: left; margin-left: 10px;}
+#mainCenter{ width: 636px; height: auto; float: left;}
+#mainRight{ width: 379px; height: auto; *width: 384px; padding-right: 5px; float: right; }
+/************************整体布局 end*****************************/
 
+/************************top*****************************/
+.topTMainUl li{ cursor: pointer; float: left; height: 19px; *height: 22px; padding-top: 3px; margin-left: 16px; float: left;}
+.topTMainUl a,.topTMainUl span{ display: inline-block; height: 16px; *height: 17px; padding-top: 1px; color: #fff; font-size: 13px; line-height: 16.25px;}
 #topTMainI{ display: block; float: left; width: 16px; height: 16px; margin: 0 5px 0 0; background-image: url("images/pc_icons_btns_sprite_0913_3pm.png"); background-position: -824px -31px;}
 #topTMainSpan{ float: left; width: 10px; height: 5px; *height: 7px; margin: 7px 0 0 5px; display: block; background-image: url("images/pc_icons_btns_sprite_0913_3pm.png"); background-position: -1px -15px; background-repeat: no-repeat;}
 #topTMainSpan1{ float: left;}
-.topBLeft{ width: 153px; height: 37px; margin-top: -8px; float: left;}
-.topBLeft a{ width: 142px; height: 54px; display: block; margin: 0 0 0px 10px; background-image: url("images/ai_marchingband_large_purple.png"); background-position: -6422px 0px; background-repeat: no-repeat;}
-.topBSearchs{ width: 635px; height: 34px;  float: left; margin-top: 1px;}
-.topBSearchsL{ width: 541px; height: 32px; border:1px solid rgb(206, 206, 214);}
-.topBSearchsL{ width: 533px; height: 32px; border:0; font-size: 17px; line-height: 32px;  }
+.topBLeft{ width: 153px; height: 37px; margin: -8px 0 0 0; float: left;}
+.topBLeft a{ width: 142px; height: 54px; display: block; margin: 0 0 0px 10px; background-image: url("images/ai_pooltable_large_purple.png"); background-position: -4942px 0px; background-repeat: no-repeat;}
+.topBSearchs{ width: 635px; height: 34px;  float: left; margin: 1px 0 0 11px; *margin-left: 13px;}
+.topBSearchsL{ float: left; width: 541px; height: 32px; border:2px solid rgb(206, 206, 214);}
+.topBSearchsL input{ width: 533px; height: 32px; border:0; font-size: 17px; line-height: 32px; font-weight: 200;}
+.topBSearchsR{ float: left; width: 88px; height: 34px; *height: 36px; background-color: rgb(52, 85, 193); background-image: linear-gradient(rgb(55, 117, 221) 0px, rgb(52, 85, 193) 100%); border: 1px solid rgb(50, 97, 195); box-shadow: rgba(0, 0, 0, 0.7) 0px 2px 6px -2px, rgba(255, 255, 255, 0.5) 0px 1px 2px 0px inset; color: #fff; font-size: 15px; line-height: 32px; border-radius: 5px; cursor: pointer;}
+.topBRight{ width: 244px; height: 31px; float: right;}
+.topBRight li{ width: 79px; height: 30px; float: left; text-align: left;}
+.topBRight a{ font-size: 13px; line-height: 40px;  }
+.topBRightLi2 em{ width: 26px; height: 24px; display: block; background-position: -392px -3px; background-repeat: no-repeat; float: left; background-image: url("images/pc_icons_btns_sprite_0913_3pm.png"); margin-top: 3px; margin-right: 3px;}
+.topBRightLi3 em{ width: 31px; height: 24px; background-position: -454px -1px;}
+/************************top end*****************************/
+
+/************************mainLeft *****************************/
+.mainLeftUl{ width: 128px; height: 507px; text-align: left; border-bottom: 1px solid rgb(230, 230, 230);}
+.mainLeftUl li{ width: 100%; height: 21px; *height: 31px; padding: 5px 0; cursor: pointer;  }
+.mainLeftUl i{ float: left; width: 20px; height: 20px; margin-right: 10px; background-image: url("images/pc_icons_btns_sprite_0913_3pm.png");}
+.mainLeftLi1 i{ background-position: -43px -66px;}
+.mainLeftLi2 i{ background-position: -64px -66px;}
+.mainLeftLi3 i{ background-position: -106px -67px;}
+.mainLeftLi4 i{ background-position: -85px -66px;}
+.mainLeftLi5 i{ background-position: -400px -67px;}
+.mainLeftLi6 i{ background-position: -379px -45px;}
+.mainLeftLi7 i{ background-position: -421px -45px;}
+.mainLeftLi8 i{ background-position: -274px -24px;}
+.mainLeftLi9 i{ background-position: -1px -67px;}
+.mainLeftLi10 i{ background-position: -358px -45px;}
+.mainLeftLi11 i{ background-position: -274px -66px;}
+.mainLeftLi12 i{ background-position: -190px -66px;}
+.mainLeftLi13 i{ background-position: -211px -67px;}
+.mainLeftLi14 i{ background-position: -253px -67px;}
+.mainLeftLi15 i{ background-position: -169px -66px;}
+#mainLeftLi16 a{ float: left; font-size: 11px;}
+#mainLeftLi16 i{ width: 6px; height: 10px; margin: 7px 10px 0 3px;  background-position: -34px -12px; }
+.mainLeftUl a{ line-height: 21px; font-size: 15px;}
+.mainLeftBottom{ width: 128px; height: 96px; margin-top: 20px; text-align: left;}
+.mainLeftBottom p{ width: 127px; height: 11px; color: rgb(153, 153, 153); font-size: 9px; line-height: 11.25px;}
+.mainLeftBottom div{ cursor: pointer; width: 128px; height: 45px; *height: 50px; padding-bottom: 5px; display: block;}
+.mainLeftBottom img{ width: 100%; height:45px;}
+.mainLeftBottom a{ color: rgb(29, 29, 163); font-size: 10.4px; line-height: 12px;}
+/************************mainLeft end*****************************/
+
+
+/************************mainCenter *****************************/
+.mainCenterSlides{ width: 634px; height: 344px; border:1px solid rgb(228, 228, 236);}
+.mainCenterSlidesTop{ width: 634px; height: 250px; cursor: pointer;}
+.mainCenterSlidesTop img{ width: 100%; height: 100%;}
+
+
+
+
+.mainCenterMain{ width: 634px; height: auto; border: 1px solid rgb(228, 228, 236); margin-top: 20px;}
+.mainCenterMainTitle{ text-align: left; width: 634px; height: 35px; background-color: rgb(80, 0, 149);}
+.mainCenterMainTitleUl{ float: left; width: 372px; *width: 387px; height: 35px; padding-left: 15px;}
+.mainCenterMainTitleUl li{ display: inline-block; float: left; height: 25px; padding: 8px 0 2px 0; }
+.mainCenterMainTitleUl a,.maincenterMTMoreT{ display: inline-block; margin-right: 15px; color: rgb(172, 150, 241); font-size: 15px; line-height: 18.75px;}
+.mainCenterMainTitleLis a{ color: #fff;}
+.mainCenterMainTitleUl a:hover{ color: #fff; text-decoration: none;}
+.maincenterMTMore{ cursor: pointer; width: 78px; height: 35px; float: left; position: relative; z-index: 2;}
+.maincenterMTMoreT{ width: 67px; height: 25px; padding: 8px 0 0 2px; display: block;  margin-left: 10px;}
+.maincenterMTMoreT i{ display: block; width: 10px; height: 8px; margin: 5px 5px 0 0; *margin: -15px 5px 0 0; background-image: url("images/pc_icons_btns_sprite_0913_3pm.png"); background-position: -42px 0; background-repeat: no-repeat; float: right;}
+.maincenterMTMoreC{ display: none; width: 124px; *width: 159px; height: auto; z-index: 99; position: absolute; padding: 12px 17px 7px 12px; top: 35px; right: 0; background-color: #fff;}
+.maincenterMTMoreC li{ width: 124px; height: 26px; }
+.maincenterMTMoreC a{ color:rgb(95, 95, 95);  font-size: 13px; line-height: 16.25px; font-weight: 400;}
+.mainCenterMainContent1{ position: relative; width: 586px; height: auto; *width: 634px; padding: 9px 36px 9px 12px; border-bottom: 1px solid rgb(242, 242, 245);}
+.mainCenterMainContent1HeadImg{ width: 82px; height: 82px; margin: 3px 12px 0 0; display: block; float: left;}
+.mainCenterMainContent1HeadImg img{ width: 82px; height: 82px; }
+.mainCenterMainContent1C{ text-align: left; width: 586px; *width: 497px; height: 83px; *float: left;}
+.mainCenterMainContent1Ch3{ width: 560px; *width: 462px; height: auto;}
+.mainCenterMainContent1Ch3 a{ font-size: 15px; line-height: 17.25px; font-weight: 700;}
+.mainCenterMainContent1Cp{ width: 100%; *width: 497px; height: auto; color: rgb(95, 95, 95); font-size: 13px; line-height: 16.25px; font-weight: 400;}
+
+.mainCenterMainContent1Cp span{ color: rgb(30, 125, 142);}
+.mainCenterMainContent1Cp a{ margin: 0 0 0 5px;}
+.hide{ display: none;}
+.mainCenterMainContent1Attitude{ width: 75px; height: 25px; position: absolute; top: 6px; right: 5px;}
+.mainCenterMainContent1Attitude a{ float: left; background-color: rgb(171, 174, 183); background-image: url("images/pc_icons_btns_sprite_0913_3pm.png"); cursor: pointer; width: 12px; height: 24px; *width: 24px; padding: 0 6px; display: block; margin-left: 1px;}
+.mainCenterMainContent1Attitude .a1{ background-position: -1018px -75px;}
+.mainCenterMainContent1Attitude .a1:hover{ background-color: rgb(104,69,153);}
+.mainCenterMainContent1Attitude .a2{ background-position: -726px -67px;}
+.mainCenterMainContent1Attitude .a2:hover{ background-color: rgb(80,161,158);}
+.mainCenterMainContent1Attitude .a3{ background-position: -651px -67px;}
+.mainCenterMainContent1Attitude .a3:hover{ background-color: rgb(242,98,85);}
+/************************mainCenter end*****************************/
+
+/************************mainRight *****************************/
+.mainRight1{ text-align: left; width: 357px; height: 157px; *height: 175px; *width: 377px; padding: 8px 10px 10px 10px; border: 1px solid rgb(226, 226, 230);}
+.mainRight1Title{ width: 357px; height: 23px; margin: 2px 0 10px 0; color: rgb(63, 63, 63); font-size: 18px; line-height: 22.5px; font-weight: 300;}
+.mainRight1Title span{ float: left;}
+.mainRight1Title a{ margin-top: 4px; line-height: 16.25px;  width: 120px; height: 16px; *width: 140px; padding-left: 20px; display: block; float: right; background-image: url("images/video_15x11.png"); background-repeat: no-repeat; background-position: 0px 2px;}
+.mainRight1Title a,.mainRight1Content a{ font-size: 13px; font-weight: 700; color: rgb(50, 79, 225);}
+.mainRight1Content{ width: 175px; height: 125px; float: left;}
+.mainRight1Content2{ float: right;}
+.mainRight1Content li{ width: 175px; height: 25px;}
+.mainRight1Content b{ width: 8px; height: 25px; float: left; color: rgb(95, 95, 95); font-weight: 300px;}
+.mainRight1Content b:hover{ text-decoration: none;}
+.mainRight1Content a{ width: 157px; height: 25px; *width: 172px; padding-left: 15px; line-height: 24.9667px;}
+.mainRight2{ width: 379px; height: 266px; margin-top: 20px; }
+.mainRight2Main{ width: 300px; height: 100%; margin: 0 auto;}
+.mainRight2Main a{ width: 300px; height: 250px; display: block;}
+.mainRight2Main img{ width: 100%; height: 100%;}
+.mainRight2MainB{ width: 300px; height: 14px; margin-top: 2px;}
+.mainRight2MainB span,.mainRight2MainB b{ cursor: pointer;color:rgb(50, 79, 225); font-size: 11px; line-height: 13.75px; font-weight: 400; float: left;}
+.mainRight2MainB b{ background-repeat: no-repeat; width: 54px; *width: 68px; display: block; height: 14px; padding: 0 14px 0 0; float: right; background-image: url("images/adchoice_1.png"); background-position: 100% 50%; color: rgb(153, 153, 153);}
+.mainRight3{ position: relative; width: 357px; *width: 379px; padding: 0 10px; height: auto; border: 1px solid rgb(226, 226, 230); margin-top: 20px;}
+.mainRight3Top{ width: 357px; height: 18px; margin-top: 5px;}
+.mainRight3Top b{ float: left; color: rgb(63, 63, 63); line-height: 18px; font-size: 18px;}
+.mainRight3Top i{ width: 10px; height: 14px; display: block; margin: 5px 0 0 5px; background-image: url("images/pc_icons_btns_sprite_0913_3pm.png"); background-position: -1px -1px; float: left;}
+.mainRight3Top1{ width: 357px; height: 35px; color: rgb(63, 63, 63); cursor: pointer; text-align: left; margin-top: 3px;}
+.mainRight3Top1b1{ font-size: 28px; line-height: 35px; float: left;}
+.mainRight3Top1b2{ font-size: 15px; line-height: 18.75px; float: left; font-weight: 400; margin-right: 5px;}
+.mainRight3Top1b3{ color: rgb(102, 102, 102); font-weight: 200; float: left; font-size: 15px; line-height: 18.75px;}
+.mainRight3PicR{ width: 92px; height: 55px; position: absolute; right: 10px; top: 5px;}
+.mainRight3PicR img{ width: 100%; height: 100%;}
+.mainRight3B{ width: 357px; height: 76px; margin-top: 10px;}
+.mainRight3B li{ width: 118px; height: 76px; border-right: 1px solid rgb(226, 226, 230); float: left; color: rgb(63, 63, 63);}
+.mainRight3B a{ width: 55px; height: 33px; display: block; margin: auto;}
+.mainRight3B img{ width: 100%; height: 100%;}
+.mainRight3B b{ margin: 5px 0; width: 119px; height: 19px; display: block;  font-size: 15px; line-height: 18.75px;}
+.mainRight3BSpan1,.mainRight3BSpan2{ font-size: 13px; line-height: 16.25px; font-weight: 400; margin-right: 5px;}
+.mainRight3BSpan2{ color: rgb(175, 175, 175); margin-left: 5px;}
+.close{ display: none; width: 23px; height: 23px; cursor: pointer; background-color:rgb(171,174,183); background-image: url("images/pc_icons_btns_sprite_0913_3pm.png"); background-position: -651px -68px; position: absolute; z-index: 2; right: 5px; top: 5px;}
+.close:hover{ background-color: rgb(86,92,104);}
+.mainRight4{ position: relative; font-size: 13px; width: 377px; height: auto; margin-top: 20px; border: 1px solid rgb(226, 226, 230);}
+.mainRight4Main{ width: 357px; *width: 277px; height: auto; *height: auto; padding: 8px 10px 10px 10px;}
+.mainRight3Top a{ float: left; margin-left: 5px; line-height: 20px;}
+.mainRight4dl{ width: 357px; height: 63px; margin: 10px 0;}
+.mainRight4dl dt,.mainRight4dl dd{ float: left;}
+.mainRight4dt{ width: 143px; height: 21px; text-align: left;}
+.mainRight4dt a,.mainRight4dt{ line-height: 21px;}
+.mainRight4dd1{ width: 80px; height: 21px; color: rgb(95, 95, 95); text-align: right; margin-right: 10px;}
+.mainRight4dd2{ width: 107px; height: 21px;color:rgb(23, 136, 23)}
+.mainRight4dd2 i{ float: left; width: 14px; height: 13px; margin: 0px 5px 0 10px; background-image: url("images/finance_icons_sprite2_01.png"); background-repeat: no-repeat;}
+.mainRight4dd2 a{ float: right;}
+.mainRight4DSearch{ width: 357px; height: 27px; margin-top: 20px; position: relative;}
+.mainRight4DSearch i{ position: absolute; top: 1px; left: 2px; width: 14px; height: 14px; display: inline-block; float: left; background-image: url("images/pc_icons_btns_sprite_0913_3pm.png"); background-position: -597px -21px; margin: 3px;}
+.mainRight4DSearch input{ width: 337px; height: 24px; padding: 3px 3px 3px 20px; color: rgb(153,153,153); line-height: 16px; font-size: 13px; font-weight: 400; float: left; }
+.mainRight4DB{ width: 355px; height: 20px; padding: 0 2px; border-top: 1px solid rgb(228, 228, 236); margin-top: 20px;}
+
+.mainRight4DB a{ display: block; float: left; width: 70px; height: 12px; *height: 20px; padding-top: 8px; margin-right: 20px; font-size: 11px; line-height: 12px; font-weight: 700; color: rgb(63, 63, 63);}
+.mainRight4DB .a2{ color: rgb(95, 95, 95);}
+.mainRight4MainP{ width: 357px; text-align: left; margin-top: 10px; color: rgb(95, 95, 95); font-size: 15px; line-height: 18.75px;}
+.mainRight4Mainul{ margin-top: 10px; width: 357px; height: 140px;}
+.mainRight4Mainul li{ width: 67px; height: 67px; float: left; margin: 5px 4px 0 0;}
+.mainRight4Mainul img{ width: 67px; height: 67px;}
+.mainRight5Ul{ margin-top: 10px; width: 357px; height: 270px;}
+.mainRight5Ul li{ width: 173px; height: 130px; margin: 5px 5px 0 0; float: left; text-align: left;}
+.mainRight5a1{ display: block; width: 173px; height: 87px; }
+.mainRight5a1 img{ width: 100%; height: 100%;}
+.mainRight5a2{ line-height: 16.25px; height: 32.5px; width: 173px; display: block;}
+.mainRight6D{ width: 357px; height: 31px; text-align: left; margin-top: 10px;}
+.mainRight6D a{ float: left; display: block; width: 73px; width: 107px; *height: 30px; padding: 7px 0 3px 0px; background-color: rgb(45, 98, 173); border:1px solid rgb(5, 70, 151); line-height: 18px; font-weight: 400; font-size: 13px; border-radius: 2px; color: #fff;}
+.mainRight6D i{ width: 22px; height: 22px; display: block; margin: 0 15px 0 -2px; float: left; background-image: url("images/pc_icons_btns_sprite_0913_3pm.png"); background-position: -23px -21px; background-repeat: no-repeat; }
+.mainRight6D p{ width: 160px; height: 28px; *width: 180px; *height: 31px; padding: 5px 10px 0 10px; color: rgb(175, 175, 175); font-size: 11px; line-height: 13.75px; float: left;}
+.mainRight7D{ width: 357px; height: 129px; text-align: left; margin-top: 10px;}
+.mainRight7D{ font-size: 13px; line-height: 16.25px; color: rgb(95, 95, 95); }
+.mainRight7D p{ margin: 10px 0;}
+.mainRight7Pic{ width: 64px; height: 64px; cursor: pointer; position: absolute; top:40px; right: 20px;}
+.mainRight7Pic img{ width: 100%; height: 100%;}
+.mainRight3TopRight{ position: relative; width: 128px; height: 27px; margin: -5px 30px 0 0; border:1px solid rgb(210, 210, 222); float: right;}
+.mainRight3TopAS{ text-align:left; cursor: pointer; display: block; width: 96px; height: 16px; margin: 5px 0 0 15px; float: left;}
+.mainRight3TopAS:hover{ text-decoration: none;}
+.mainRight3TopRight i{ width: 9px; height: 6px; display: block; float: right; margin: 10px 5px 0 0; background-image: url("images/pc_icons_btns_sprite_0913_3pm.png"); background-position: -42px -8px; background-repeat: no-repeat;}
+.mainRight3TopRSelect{ display: none; width: 128px; height: 192px; z-index: 2; position: absolute; border: 1px solid rgb(210, 210, 222); top:-1px; left: -1px; background-color: #fff;}
+.mainRight3TopRSelect li{ text-align: left; width: 120px; height: 19px; *width: 128px; *height: 27px; padding: 4px;}
+.mainRight3TopRSelect i{ display: inline-block; float: left; width: 10px; margin: 3px 5px 0 0; height: 8px;   background-image: none; background-position: -68px -30px; background-repeat: no-repeat;}
+.mainRight3TopRSelect a{ cursor: pointer; width: 100px; height: 16px; float: left; display: inline-block; color: rgb(69, 73, 83); font-size: 13px; line-height: 16.25px; font-weight: 400;}
+.mainRight8content1{ width: 357px; height: 115px; margin: 10px 0 5px 0;}
+.mainRight8content1 img{ width: 100%; height: 100%; cursor: pointer;}
+.mainRight8B{ width: 357px; height: 16px;}
+.mainRight8B a{ float: right;}
+.mainRight3TopRSelectS a{ font-weight: 700;}
+.mainRight3TopRSelectS i{ background-image: url("images/pc_icons_btns_sprite_0913_3pm.png");}
+.mainRight9{ width: 307px; height: 57px; margin: 20px 60px 20px 10px;}
+.mainRight9ul{ width: 307px; height: 43px;}
+.mainRight9ul li{ display: inline-block; float: left; margin-right: 22px;}
+.mainRight9ul a,.mainRight9 p{ color: rgb(29, 29, 163); font-size: 11px; font-weight: 400; line-height: 13.75px;}
+.mainRight9 p{ color: rgb(175, 175, 175); text-align: left;}
+
+/************************mainRight end*****************************/
+
+
+
+
+
+
+
+
+
+
 
