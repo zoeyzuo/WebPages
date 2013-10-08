@@ -7,15 +7,15 @@ a:hover{ text-decoration: underline;}
 
 /************************整体布局*****************************/
 body{ font-family: "Helvetica Neue",Helvetica,Arial; font-weight: 300;}
-#top{ width: 100%; height: 86px;}
+#top{ width: 100%; height: 86px; background-color: #fff;}
 #main{ width: 100%; height: auto;}
 #topT{ width: 100%; height: 22px; margin: auto; background-color: rgb(45, 17, 82);}
 #topTMain{ width: 1200px; height: 100%; margin: auto; }
 #topB{ width: 1200px; height: 37px; *height: 64px; margin: auto; padding: 14px 0; }
 #mainMain{ width: 1200px; height: auto; margin: auto;}
-#mainLeft{ width: 153px; height: 624px; float: left; margin-left: 10px;}
+#mainLeft{ width: 153px; height: 624px; float: left; margin-left: 10px; background-color: #fff;}
 #mainCenter{ width: 636px; height: auto; float: left;}
-#mainRight{ width: 379px; height: auto; *width: 384px; padding-right: 5px; float: right; }
+#mainRight{ position: relative; width: 379px; height: auto; *width: 384px; padding-right: 5px; float: right; background-color: #fff; }
 /************************整体布局 end*****************************/
 
 /************************top*****************************/
@@ -69,8 +69,23 @@ body{ font-family: "Helvetica Neue",Helvetica,Arial; font-weight: 300;}
 
 /************************mainCenter *****************************/
 .mainCenterSlides{ width: 634px; height: 344px; border:1px solid rgb(228, 228, 236);}
-.mainCenterSlidesTop{ width: 634px; height: 250px; cursor: pointer;}
+.mainCenterSlidesTop{ width: 634px; height: 250px; cursor: pointer; position: relative;}
 .mainCenterSlidesTop img{ width: 100%; height: 100%;}
+.mainCenterSlidesTopDes{cursor: pointer;  width: 634px; height: 78px; position: absolute; bottom: 0; left: 0; z-index: 2; opacity: 0.7; background-color: #fff;}
+.mainCenterSlidesTopDesMain{ text-align: left; width: 585px; height: 60px; margin: 7px 36px 8px 13px;}
+.mainCenterSlidesTopDesH3{ width: 585px; height: 23px;}
+.mainCenterSlidesTopDesH3 a{ font-size: 18px; line-height: 23px; font-weight: 700; }
+.mainCenterSlidesTopDesMain p{ margin-top: 5px;}
+.mainCenterSlidesBottom{ width: 590px; height: 93px; *width: 634px; *height: 94px; padding: 0 22px; border:1px solid;}
+.mainCenterSlidesBottom ul{ width: 590px; height: 93px; }
+.mainCenterSlidesBottom li{ float: left; width: 117px; height: 88px; margin-right: 1px; border-bottom: 5px solid #fff;}
+.mainCenterSlidesBottom img{ margin: 5px 0; width: 117px; height: 48px;}
+.mainCenterSlidesBottom a{ height: 23px; width: 97px; *width: 117px; display: block; padding: 0 10px; line-height: 12px; font-size: 11px; }
+.mainCenterSlidesBottom .mainCenterSlidesBottomLiS{ border-bottom: 5px solid rgb(80, 0, 149);}
+
+
+
+
 
 
 
@@ -94,7 +109,7 @@ body{ font-family: "Helvetica Neue",Helvetica,Arial; font-weight: 300;}
 .mainCenterMainContent1C{ text-align: left; width: 586px; *width: 497px; height: 83px; *float: left;}
 .mainCenterMainContent1Ch3{ width: 560px; *width: 462px; height: auto;}
 .mainCenterMainContent1Ch3 a{ font-size: 15px; line-height: 17.25px; font-weight: 700;}
-.mainCenterMainContent1Cp{ width: 100%; *width: 497px; height: auto; color: rgb(95, 95, 95); font-size: 13px; line-height: 16.25px; font-weight: 400;}
+.mainCenterMainContent1Cp,.mainCenterSlidesTopDesMain p{ width: 100%; *width: 497px; height: auto; color: rgb(95, 95, 95); font-size: 13px; line-height: 16.25px; font-weight: 400;}
 
 .mainCenterMainContent1Cp span{ color: rgb(30, 125, 142);}
 .mainCenterMainContent1Cp a{ margin: 0 0 0 5px;}
@@ -146,7 +161,7 @@ body{ font-family: "Helvetica Neue",Helvetica,Arial; font-weight: 300;}
 .mainRight3BSpan1,.mainRight3BSpan2{ font-size: 13px; line-height: 16.25px; font-weight: 400; margin-right: 5px;}
 .mainRight3BSpan2{ color: rgb(175, 175, 175); margin-left: 5px;}
 .close{ display: none; width: 23px; height: 23px; cursor: pointer; background-color:rgb(171,174,183); background-image: url("images/pc_icons_btns_sprite_0913_3pm.png"); background-position: -651px -68px; position: absolute; z-index: 2; right: 5px; top: 5px;}
-.close:hover{ background-color: rgb(86,92,104);}
+.close:hover,.goBack:hover{ background-color: rgb(86,92,104);}
 .mainRight4{ position: relative; font-size: 13px; width: 377px; height: auto; margin-top: 20px; border: 1px solid rgb(226, 226, 230);}
 .mainRight4Main{ width: 357px; *width: 277px; height: auto; *height: auto; padding: 8px 10px 10px 10px;}
 .mainRight3Top a{ float: left; margin-left: 5px; line-height: 20px;}
@@ -202,7 +217,8 @@ body{ font-family: "Helvetica Neue",Helvetica,Arial; font-weight: 300;}
 .mainRight9ul li{ display: inline-block; float: left; margin-right: 22px;}
 .mainRight9ul a,.mainRight9 p{ color: rgb(29, 29, 163); font-size: 11px; font-weight: 400; line-height: 13.75px;}
 .mainRight9 p{ color: rgb(175, 175, 175); text-align: left;}
-
+.goBack{ position: absolute; bottom:10px; right: 10px; z-index: 100; border-radius: 5px; width: 22px; height:24px; *width: 46px; *height: 48px; padding: 12px;  background-color: rgb(171, 174, 183);}
+.goBack span{ width: 22px; height:24px; background-image: url("images/pc_icons_btns_sprite_0913_3pm.png"); background-position: -118px -20px; display: block;}
 /************************mainRight end*****************************/
 
 

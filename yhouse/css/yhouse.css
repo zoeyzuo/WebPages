@@ -1,0 +1,138 @@
+/*******************整体布局***********************/
+body{ font-family:"Microsoft YaHei",SimHe,arial,SimSun;}
+a:hover{ text-decoration: underline;}
+#toper{ width: 960px; height: 140px; *height: 157px; padding: 5px 0 12px 0; margin: 0 auto;}
+#top{ width: 930px; height: 74px; background-color: rgb(17, 17, 17); *width: 960px; *height: 100px; padding: 26px 0 0 30px; margin: 0 auto 12px auto;}
+#main{ width: 970px; height: 5598px; margin: 0 auto;}
+#foot{ width: 1349px; height: 124px; *height: 164px; padding: 20px 0; background-color: rgb(34, 34, 34);}
+
+
+/*******************整体布局 end***********************/
+
+
+/*******************toper***********************/
+.toperLeft{ width: 680px; height: 140px; float: left;}
+.toperLeft img{ width: 680px; height: 140px;}
+.toperRight{ width: 220px; height: 132px; *width: 268px; *height: 140px; float: right; padding: 0 21px 0 19px; border:4px solid rgb(193, 39, 45);}
+.toperRightT{ width: 220px; height: 30px; *height: 40px; padding: 10px 0 0 0; }
+.toperRightT1{ float: left; color: rgb(193,39,45); font-weight: 700; font-size: 14px; display: block; }
+.toperRightT2{ height: 14px; margin-top: 3px; border-left: 1px solid rgb(187, 187, 187); margin-left: 10px; float: left; display: block; }
+.toperRightT a{ color: rgb(51, 51, 51); float: right; display: block; margin-left: 10px;}
+.toperRightT a:hover{ color: rgb(30, 38, 131);}
+.toperRightMain{ width: 220px; height: 93px;}
+.toperRightMainL{ width: 160px; height: 93px; float: left;}
+.txt{ width: 160px; height: 19px; margin-bottom: 12px; background-image: url("images/input01.gif"); background-repeat: repeat;}
+.txt img{ width: 11px; height: 11px; margin: 4px 0 0 6px; float: left;}
+.txt input{ width: 130px; height: 19px; margin: 0 5px; border:0; *padding-top: 3px; float: left; background-color: transparent; color: rgb(128, 128, 128); font-size: 11px; line-height: 16px;}
+.toperRightMainR{ width: 46px; height: 81px; float: right;}
+.toperRightMainRLogin{ width: 100%; height: 33px; *height: 50px; display: block; background-color: rgb(193, 39, 45); color: #fff; line-height: 16px; font-size: 11px; padding: 17px 0 0 0;}
+.toperRightMainRJ{ width: 100%; height: 19px; display: block; margin-top: 12px; background-color: rgb(193, 39, 45); background-image: url("images/ico03.gif"); background-position: 50% 50%; background-repeat: no-repeat;}
+/*******************toper end***********************/
+
+
+/*******************top***********************/
+.topLogo{ width: 80px; height: 61px; margin: -7px 20px 0 0; float: left; display: block;}
+.topLogo img{ width: 100%; height: 100%;}
+#top dl{ width: auto; height: 74px; float: left; text-align: left;} 
+.topDt{ width: auto; height: 21px;  padding: 0 13px 0 0; float: left; }
+.topDt a{ color: rgb(193, 39, 45); font-size: 16px; line-height: 21px;}
+.topDd{ width: auto; height: 74px; padding-right: 20px; margin-right: 14px; float: left; background-image: url("images/line02.gif"); background-position: 100% 0; background-repeat: no-repeat;} 
+.topDd a{ margin: 0 4px 10px 0; font-size: 13px; display: inline-block; color: rgb(238, 238, 238);}
+.topDdS{ background-image: none;}
+/*******************top end***********************/
+
+
+/*******************main***********************/
+#main1{ width: 100%; height: 780px;}
+#main2{ width: 100%; height: 480px; margin-top: 20px; border-top: 1px solid rgb(51,51,51);}
+#main3{ width: 100%; height: 120px; margin-top: 20px;}
+#main4{ width: 100%; height: 40px; border-top: 1px solid rgb(51,51,51); margin-top: 20px;}
+#main5{ border:1px solid #ccc; width: 100%; height: 341px; margin-top: 20px;}
+
+
+
+.main1Left{ width: 680px; height: 780px; float: left; }
+.main1Slide{ width: 680px; height: 290px; margin-bottom: 14px; overflow: hidden; position: relative;}
+.main1SlideUl{ width: 2720px; height: 290px; position: relative;}
+.main1SlideUl li{ width: 680px; height: 290px; float: left;}
+.main1SlideUl img{ width: 680px; height: 290px; }
+.main1SlideNum,.main1Slide2Num{ width: auto; height: 8px; position: absolute; bottom: 10px; right: 5px; z-index: 1;}
+.main1SlideNum li,.main1Slide2Num li{ width: 8px; height: 8px; margin-right: 5px; float: left; background-color: rgba(255,255,255,0.5);}
+
+.main1Left2{ width: 100%; height: 476px;}
+.main1Left2LSlide2{ width: 320px; height: 476px; float: left; position: relative; overflow: hidden;}
+.main1Slide2Ul{ width: 640px; height: 476px; position: relative;}
+.main1Slide2Ul li{ width: 320px; height: 476px; float: left;}
+.main1Slide2Ul img{ width: 320px; height: 476px;}
+
+.main1Left2R{ width: 340px; height: 476px; background-image: url("images/title01.gif"); background-position: 0 4px; background-repeat: no-repeat; float: right;}
+.main1Left2RH1{ width: 340px; height: 22px; margin: 70px 0 15px 0; text-align: center;}
+.main1Left2RH1 a{ color: rgb(193, 39, 45); font-size: 16px;}
+
+.main1Left2RUl{ width: 340px; height: 30px;}
+.main1Left2RUl li{ float: left; width: 142px; *width: 152px; padding: 0 0 0 10px; margin: 0 4px 15px 4px; background-image: url("images/dot.gif"); height: 18px; background-position: 0% 50%; background-repeat: no-repeat;}
+.main1Left2RUl a{ width: 136px; height: 38px; display: block; color: rgb(51, 51, 51); font-size: 14px; line-height: 18px; text-align: left; }
+.main1Left2RUl a:hover,.main1Left2R3H3 a:hover,.main1Right2d3Right a:hover{color: rgb(30, 38, 131);}
+
+.main1Left2R3{ width: 340px; height: 153px; *height: 171px; padding: 18px 0 0 0; margin-top: -5px;}
+.main1Left2R3 img{ float: left; width: 150px; height: 150px; }
+.main1Left2R3R{ width: 160px; height: 143px; *height: 153px; padding: 10px 0 0 0; margin-right: 15px; float: right;}
+
+.main1Left2R3H3{ width: 160px; height: 38px;  text-align: left;}
+.main1Left2R3H3 a{  font-size: 14px; color: rgb(51, 51, 51);}
+.main1Left2R3P{ width: 160px; height: 100px; text-align: justify; font-size: 12px; line-height: 20px; text-indent: 20px;}
+
+.main1Left2R3 .imgs{ float: right; margin-right: 10px;}
+.main1Left2R3RS{ float: left;}
+
+.main1Right{ width: 268px; height: 777px; float: right;}
+.main1Right1{ width: 268px; height: 457px;}
+.main1Right1 img{ width: 268px; height: 457px;}
+.main1Right2{ width: 266px; height: 280px; margin-top: 38px; border: 1px dashed rgb(193, 39, 45); position: relative;}
+.main1Right2PinPai{ width: 100px; height: 28px; *height: 31px; background-color: rgb(193, 39, 45); color: #fff;  font-size: 17px; top: -12px; left: 10px; padding-top: 3px; position: absolute;}
+.main1Right2p{ width: 261px; height: 16px; *height: 21px; *width: 266px; padding: 5px 5px 0 0;}
+.main1Right2p a,.main2LeftTitleD a{ color: rgb(193, 39, 45); font-size: 11px; float: right;}
+.main1Right2d3{ width: 246px; height: 125px; margin: 0 auto; margin-top: 8px; border-bottom: 1px dashed rgb(119, 119, 119); }
+.main1Right2d3 img{width: 92px; height: 92px; border:4px solid rgb(204, 204, 204); float: left;}
+.main1Right2d3Right{ width: 136px; height: 93px; float: right;}
+.main1Right2d3Right h3{ width: 132px; height: 40px;}
+.main1Right2d3Right a{ color: rgb(51, 51, 51); font-size: 14px;}
+.main1Right2d3Right p{ width: 136px; height: 48px; margin-top: 5px; color: rgb(119, 119, 119); font-size: 11px;}
+.main1Right1Slide3{ width: 246px; height: 105px; margin: 10px auto 0 auto; overflow: hidden;}
+.main1Right1Slide3Ul{ width: 984px; height: 105px; position: relative;}
+.main1Right1Slide3Ul li{ width:246px; height: 105px; float: left;}
+.main1Right1Slide3Ul img{ width: 246px; height: 105px;}
+
+
+.main2Left{ width: 680px; height: 480px; float: left;}
+.main2LeftTitle{ width: 100%; height: 40px; *height: 65px; padding-top: 25px; margin-bottom: 10px;}
+.main2LeftTitleSpan1{ display: block; color: rgb(193, 39, 45); font-size: 25px; float: left;}
+.main2LeftTitleSpan2{ color: rgb(193, 39, 45); font-size: 18px; margin-top: 8px; display: block; width: 162px; *width: 172px; height: 24px; padding-left: 10px; float: left;}
+.main2LeftTitleD{ width: 230px; height: 20px; margin-top: 10px; float: right;}
+.main2LeftTitleD a{ float: left; display: block; margin-left: 10px; font-size: 15px;}
+.main2LeftTitleD .main2LeftTitleDS{ font-size: 11px; margin-top: 4px;}
+.main2LeftImgs{ width: 100%; height: 405; margin-top: 10px;}
+.main2LeftImgs ul{ width: 690px; height: 405px;}
+.main2LeftImgs li{ width: 220px; height: 135px; *width: 230px; position: relative; padding-right: 10px; float: left;}
+.main2LeftImgs img{ width: 220px; height: 127px;}
+.main2LeftImgs span{ width: 212px; *width: 220px; height: 21px; *height: 22px; text-align: left; position: absolute; bottom: 8px; left: 0; display: block; color: #fff; line-height: 21px; padding: 1px 0 0 8px;background-color: #000; opacity: 0.5;}
+
+.main2Right{ width: 268px; height: 479px; float: right;}
+.main2RightUl{ width: 268px; height: 75px; background-image: url("images/line04.gif"); background-position: 133px 32px; background-repeat: no-repeat;}
+.main2RightUl li{ width: 134px; height: 23px; *height: 53px; padding-top: 30px; cursor: pointer; color: rgb(193, 39, 45); font-size: 17px; float: left;}
+.main2RightUl .main2RightLiS{ color: rgb(51,51,51);}
+.main2RightD{ width: 268px; height: 397px; margin-top: 0px;}
+.main2RightD img{ width: 268px; height: 397px;}
+.main2RightD2{display: none;}
+
+#main3 img{ width: 960px; height: 120px;}
+/*******************main end***********************/
+
+
+/*******************foot***********************/
+#footMain{ width: 750px; height: 100px; margin: 0 auto; text-align: left; *width: 960px; *height: 124px; padding: 24px 0 0 210px; background-image: url("images/copy_logo.gif"); background-position: 20px 0; background-repeat: no-repeat;}
+.footMainT{ width: 750px; height: 34px; }
+.footMainT a{ height: 34px; width: auto; margin-right: 30px; display: block; float: left; color: rgb(204, 204, 204); font-size: 12px; line-height: 17px; }
+.footMainT span,#footMain p{ color: rgb(119, 119, 119);}
+#footMain p{ width: 750px; height: 17px; margin-top: 15px; line-height: 17px; }
+/*******************foot end***********************/
