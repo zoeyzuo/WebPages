@@ -17,6 +17,13 @@ function initEvents(){
 
 	//main2Right中，选项卡
 	tabMain2Right();
+	//main5中,手风琴效果
+	accordionMain5();
+	//main6Right slide4中，幻灯片的实现；当鼠标移入和移出图片时，停止幻灯片的转换；当鼠标放到相应的小图标时，显示相应的图片
+	slide4Main6Right();
+
+	//main10 slide5中，幻灯片的实现；当鼠标移入和移出图片时，停止幻灯片的转换；当鼠标放到相应的小图标时，显示相应的图片
+	slide5Main10();
 }
 //footTop中，鼠标移入和移出时，字体颜色的改变；
 function changeFootTop(){
@@ -95,6 +102,21 @@ function slide3(){
 	indexSlide3++;
 }
 
+//main6Right slide4中，幻灯片的实现；当鼠标移入和移出图片时，停止幻灯片的转换；当鼠标放到相应的小图标时，显示相应的图片
+var handle4;
+function slide4Main6Right(){
+	handle4=setInterval("slide4()",2000);
+	slideOther("main1Slide4Ul","main1Slide4Num",handle4,"slide4()",indexSlide4,4);
+}
+var indexSlide4=1;
+function slide4(){
+	if (indexSlide4==4) {
+		indexSlide4=1;
+	};
+	slideChangePicAndNum("main1Slide4Ul","main1Slide4Num",indexSlide4,4);
+	indexSlide4++;
+}
+
 //当鼠标移入和移出图片时，停止幻灯片的转换；当鼠标放到相应的小图标时，显示相应的图片
 function slideOther(ulPicName,ulnumName,handle,slideFun,index,widthIndex){
 	$("."+ulPicName+" li").hover(function(){
@@ -123,6 +145,10 @@ function slideChangePicAndNum(ulPicName,ulnumName,index,widthIndex){
 		}else{
 			if (widthIndex==3) {
 				width=246;
+			}else{
+				if (widthIndex==4) {
+					width=268;
+				};
 			}
 		}
 	}
@@ -142,6 +168,41 @@ function tabMain2Right(){
 		$(".main2RightD").hide();
 		$(".main2RightD"+val).show();
 	});
+}
+
+//main5中,手风琴效果
+function accordionMain5(){
+	$(".main5Ul li").mouseover(function(){
+		//$(".main5Ul li").stop();
+		//$(".main5Ul").find(".on").animate({width:"41px"},300);
+		$(".main5Ul li").css("width","41px");
+		//$(this).animate({width:"714px"},500);
+		
+		$(this).css("width","714px");
+		//$(this).addClass("on");
+		
+		/*$(".main5Ul li").animate({width:"41px"},300);
+		$(this).animate({width:"714px"},2000);*/
+	});
+}
+
+//main10 slide5中，幻灯片的实现；当鼠标移入和移出图片时，停止幻灯片的转换；当鼠标放到相应的小图标时，显示相应的图片
+var handle5;
+function slide5Main10(){
+	handle5=setInterval("slide5()",2000);
+	$(".main10ContentUl").hover(function(){
+		clearInterval(handle5);
+	},function(){
+		handle5=setInterval("slide5()",2000);
+	});
+}
+var indexSlide5=1;
+function slide5(){
+	if(indexSlide5==5){
+		indexSlide5=1;
+	}
+	$(".main10ContentUl").animate({left:"-"+(indexSlide5-1)*915+"px"},1000);
+	indexSlide5++;
 }
 
 
