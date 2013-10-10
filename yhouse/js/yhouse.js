@@ -129,6 +129,29 @@ function slideOther(ulPicName,ulnumName,handle,slideFun,index,widthIndex){
 		var val=parseInt($(this).attr("value"));
 		index=val;
 		slideChangePicAndNum(ulPicName,ulnumName,index,widthIndex);
+		var picNum=$("."+ulnumName+" li").length;
+		if (val==picNum) {
+			val=1;
+		}else{
+			val=val+1;
+		}
+		if (widthIndex==1) {
+			indexSlide1=val;
+		}else{
+			if (widthIndex==2) {
+				indexSlide2=val;
+			}else{
+				if (widthIndex==3) {
+					indexSlide3=val;
+				}else{
+					if (widthIndex==4) {
+						indexSlide4=val;
+					}else{
+						indexSlide5=val;
+					}
+				}
+			}
+		}
 	},function(){
 		handle=setInterval(slideFun,2000);
 	});

@@ -13,6 +13,11 @@
 				initEvents();
 			});
 			function initEvents(){
+				searchs();
+				slide1MainLeft1();
+			}
+			//搜索区
+			function searchs(){
 				$("#searchText").focus(function(){
 					$(this).next().slideDown(400);
 				});
@@ -25,7 +30,6 @@
 					$("#searchText").val(val);
 					$("#searchText").attr("nameIs",nameI);
 					$("#flowSearch").slideUp(400);
-
 				});
 				$("#SearchBtn").hover(function(){
 					$(this).css("background-position","-400px -112px");
@@ -43,10 +47,6 @@
 						case "qq":href="qq/qq.html"; break;
 						case "happyNet":href="happyNet/happyNet.html"; break;
 						case "tumblr":href="tumblr/tumblrLogin.html"; break;
-						case "test1":href="test/test1.html"; break;
-						case "test2":href="test/test2.html"; break;
-						case "test3":href="test/test3.html"; break;
-						case "test4":href="test/test4.html"; break;
 						case "Within":href="themeForest_within/themeForest.html"; break;
 						case "jobTo":href="职来职往/jobTo.html"; break;
 						case "tennisNet":href="tennisNet/tennisNet.html"; break;
@@ -54,18 +54,83 @@
 						case "MSN":href="MSN/MSN.html"; break;
 						case "weibo":href="weibo/weibo.html"; break;
 						case "yahoo":href="yahoo/yahoo.html"; break;
+						case "yhouse":href="yhouse/yhouse.html"; break;
 						default:href="#";break;
 					}
 					//alert(href);
 					$("#SearchBtn a").attr("href",href); 
 				});
 			}
+			//mainLeft1Top中，简单的幻灯片
+			var handle1;
+			function slide1MainLeft1(){
+				handle1=setInterval("slide1()",2000);
+				slideOther("main1SlideUl","main1SlideNum",handle1,"slide1()",indexSlide1,1);
+			}
+			var indexSlide1=1;
+			function slide1(){
+				if (indexSlide1==11) {
+					indexSlide1=1;
+					//$(".main1SlideUl").css("left","0");
+				};
+				slideChangePicAndNum("main1SlideUl","main1SlideNum",indexSlide1,1);
+				indexSlide1++;
+			}
+			//当鼠标移入和移出图片时，停止幻灯片的转换；当鼠标放到相应的小图标时，显示相应的图片
+			function slideOther(ulPicName,ulnumName,handle,slideFun,index,widthIndex){
+				$("."+ulPicName+" li").hover(function(){
+					clearInterval(handle);
+				},function(){
+					handle=setInterval(slideFun,2000);
+				});
+				$("."+ulnumName+" li").hover(function(){
+					clearInterval(handle);
+					var val=parseInt($(this).attr("value"));	
+					slideChangePicAndNum(ulPicName,ulnumName,val,widthIndex);
+					if (val==10) {
+						indexSlide1=1;
+					}else{
+						indexSlide1=val+1;
+					}
+				},function(){
+					handle=setInterval(slideFun,2000);
+				});
+			}
+			//slide,切换图片和改变图标
+			function slideChangePicAndNum(ulPicName,ulnumName,index,widthIndex){
+				var width;
+				if (widthIndex==1) {
+					width=680;
+				}else{
+					if (widthIndex==2) {
+						width=320;
+					}else{
+						if (widthIndex==3) {
+							width=246;
+						}else{
+							if (widthIndex==4) {
+								width=268;
+							};
+						}
+					}
+				}
+				//alert(index);
+				$("."+ulPicName+" li").hide();
+				$("."+ulPicName+" li:nth-child("+index+")").show();
+				if (ulnumName!="") {
+					$("."+ulnumName+" li").css({"background-color":"rgb(0,0,0)","opacity":"0.5"});
+					$("."+ulnumName+" li:nth-child("+index+")").css({"background-color":"rgb(0,0,0)","opacity":"1"});
+				};	
+
+			}
 
 		</script>
 		<style type="text/css">
 			body{text-align: center; font-family: 宋体;}
+			.github{ width: 100px; height: 100px;  position: fixed; top: 200px; left: 10px; *position: absolute;}
+			.github img{ width: 100px; height: 100px;}
 			/******************搜索区******************/
-			#all{ width: 900px; height: 560px; margin:auto; text-align: center; padding: 50px;}
+			#all{ width: 960px; height: auto; padding: 80px 0 0 0; margin:auto; text-align: center;}
 			#searchs{ position: relative; width: 605px; height: 50px; margin:0 auto; }
 			#searchs span{ font-size: 16px; font-weight: 700; display: block; width: 100px; height: 36px;float: left; line-height: 36px; }
 			#searchText{ display: block;float: left; width: 400px; height: 36px; border:1px solid #ccc; line-height: 30px; padding: 5px 6px 5px 15px; font-size: 16px; box-shadow: 0 0 1px rgba(0,0,0,0.3) inset; border-right: 0px;}
@@ -78,24 +143,33 @@
 			#SearchBtn a{ display: block; height: 36px; width: 100%; font-size:16px; font-weight: 700; color: #fff; line-height: 36px; }
 			/******************搜索区 end******************/
 			/******************Main******************/
-			#main{ width: 100%; height: 500px; margin: 0 auto;}
+			#main{ width: 100%; height: 400px; margin: 0 auto;}
 			#main ul{ width: 100%; height: 100%; text-align: left;}
 			#main li{ float: left; width: 100px; height: 100px; margin: 10px 10px 0 0;}
 			#main img{ width: 100px; height: 80px; border:1px solid #ccc; border-radius: 5px;}
 			.mainWordA{ font-size: 12px; display: block; width: 100px; height: 20px; line-height: 20px; text-align: center; color: #000;}
 			.mainWordA:hover{ text-decoration: underline;}
 			/******************Main end******************/
+			.main1Slide{ width: 680px; height: 650px; margin:0 auto 30px auto; overflow: hidden; position: relative;}
+			.main1SlideUl{ width: 68000px; height: 600px; position: relative;}
+			.main1SlideUl li{ width: 680px; height: 600px; float: left;}
+			.main1SlideUl img{ width: 680px; height: 600px; }
+			.main1SlideNum{ width: auto; height: 8px; position: absolute; bottom: 30px; right: 5px; z-index: 1;}
+			.main1SlideNum li{ width: 8px; height: 8px; margin-right: 5px; float: left; background-color: rgba(0,0,0,0.5);}
+			.slides{ width: 960px; height: auto; margin: 0 auto;}
 		</style>
 	</head>
 	<body>
-		<a id="goBack" href="../index.html"></a>
+		<div class="github">
+			<a href="https://github.com/zoeyzuo/WebPages.git"><img title="gitHub" alt="gitHub" src="index/index_images/github.png"></a>
+		</div>
+		<!-- <a id="goBack" href="../index.html"></a> -->
 		<div id="all">
 			<div id="searchs">
 				<span>作品集：</span>
 				<input type="text" nameIs="" value="请选择..." id="searchText">
 				<div id="flowSearch">
 					<ul id="flowSearchUl">
-						<li><a nameIs="gitHub" href="#">gitHub链接</a></li>
 						<li><a nameIs="qq" href="#">腾讯首页</a></li>
 						<li><a nameIs="happyNet" href="#">开心网</a></li>
 						<li><a nameIs="Within" href="#">ThemeForest_Within</a></li>
@@ -105,6 +179,7 @@
 						<li><a nameIs="MSN" href="#">MSN中文网</a></li>
 						<li><a nameIs="weibo" href="#">新浪微博</a></li>
 						<li><a nameIs="yahoo" href="#">Yahoo</a></li>
+						<li><a nameIs="yhouse" href="#">YHOUSE-悦会</a></li>
 						<!-- <li><a nameIs="tumblr" href="#">Tumblr</a></li>
 						<li><a nameIs="test1" href="#">练习1</a></li>
 						<li><a nameIs="test2" href="#">练习2</a></li>
@@ -117,10 +192,6 @@
 			</div>
 			<div id="main">
 				<ul>
-					<li>
-						<a href="https://github.com/zoeyzuo/WebPages.git"><img title="gitHub" alt="gitHub" src="index/index_images/github.png"></a>
-						<a href="https://github.com/zoeyzuo/WebPages.git" class="mainWordA">gitHub</a>
-					</li>
 					<li>
 						<a href="qq/qq.html"><img alt="腾讯首页" title="腾讯首页" src="index/index_images/qq.png"></a>
 						<a href="qq/qq.html" class="mainWordA">腾讯首页</a>
@@ -157,8 +228,61 @@
 						<a href="yahoo/yahoo.html"><img alt="yahoo" title="Yahoo" src="index/index_images/yahoo.png"></a>
 						<a href="yahoo/yahoo.html" class="mainWordA">Yahoo</a>
 					</li>
+					<li>
+						<a href="yhouse/yhouse.html"><img alt="yhouse" title="YHOUSE-悦会" src="index/index_images/yhouse.png"></a>
+						<a href="yhouse/yhouse.html" class="mainWordA">YHOUSE-悦会</a>
+					</li>
 
 				</ul>
+			</div>
+			<div id="slides">
+				<div class="main1Slide">
+					<ul class="main1SlideUl">
+						<li>
+							<a href="qq/qq.html"><img alt="腾讯首页" title="腾讯首页" src="index/index_images/qq.png"></a>
+						</li>
+						<li>
+							<a href="happyNet/happyNet.html"><img title="开心网" alt="开心网" src="index/index_images/happyNet.png"></a>
+						</li>
+						<li>
+							<a href="themeForest_within/themeForest.html"><img title="ThemeForest_Within" alt="ThemeForest_Within" src="index/index_images/themeForest.png"></a>
+						</li>
+						<li>
+							<a href="职来职往/jobTo.html"><img alt="职来职往" title="职来职往" src="index/index_images/jobTo.png"></a>
+						</li>
+						<li>
+							<a href="tennisNet/tennisNet.html"><img title="网球网" alt="网球网" src="index/index_images/tennisNet.png"></a>
+						</li>
+						<li>
+							<a href="tesla_Motors/tesla.html"><img alt="tesla_Motors" title="tesla_Motors" src="index/index_images/tesla_motors.png"></a>
+						</li>
+						<li>
+							<a href="MSN/MSN.html"><img alt="MSN" title="MSN" src="index/index_images/MSN.png"></a>
+						</li>
+						<li>
+							<a href="weibo/weibo.html"><img alt="weibo" title="新浪微博" src="index/index_images/weibo.png"></a>
+						</li>
+						<li>
+							<a href="yahoo/yahoo.html"><img alt="yahoo" title="Yahoo" src="index/index_images/yahoo.png"></a>
+						</li>
+						<li>
+							<a href="yhouse/yhouse.html"><img alt="yhouse" title="YHOUSE-悦会" src="index/index_images/yhouse.png"></a>
+						</li>
+						
+					</ul>
+					<ul class="main1SlideNum">
+						<li value="1"></li>
+						<li value="2"></li>
+						<li value="3"></li>
+						<li value="4"></li>
+						<li value="5"></li>
+						<li value="6"></li>
+						<li value="7"></li>
+						<li value="8"></li>
+						<li value="9"></li>
+						<li value="10"></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</body>
