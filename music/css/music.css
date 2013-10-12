@@ -5,12 +5,11 @@ a:hover{ text-decoration: underline;}
 #topMain{ width: 960px; height: 24px; margin: 0 auto;}
 #header{ width: 960px; height: 144px; margin: 0 auto; margin-top: 5px;}
 #main{ width: 960px; height: auto; margin: 0 auto;}
-.main1,.main2,.main3,.main4,.main5,.main6,.main7{ border:1px solid #ccc; width: 100%; margin-top: 8px;}
+.main1,.main2,.main7{ width: 100%; margin-top: 8px;}
 .main1{ height: 392px;}
-.main2,.main7{ height: 90px;}
-.main3{ height: 682px;}
-.main4{ height: 480px;}
-.main5{ height: 368px;}
+.main2,.main7{ height: 90px; overflow: hidden;}
+.main3{ height: 690px;width: 100%; margin-top: 8px; text-align: left;}
+.main7{ border:1px solid rgb(178, 208, 234);}
 #foot{ width: 960px; height: 81px; *height: 98px; padding: 8px 0; margin: 0 auto; margin-top: 16px; border-top: 1px solid rgb(222, 239, 250);}
 /******************整体布局 end*******************************/
 
@@ -56,7 +55,7 @@ a:hover{ text-decoration: underline;}
 .headerTopS1Content{ display: none; width: 240px; height: 19px; border:1px solid rgb(16, 137, 209); position: absolute; top: 30px; left: 0px; }
 .headerTopS1Content li{ width: 46px;  height: 19px; text-align: center; border-left: 1px solid rgb(238, 238, 238); float: left;}
 .headerTopS1Content a{ color: rgb(102,102,102); width: 46px; height: 19px; display: block; line-height: 19px;}
-.mostColor,.lis a,.headerTopS1Content a:hover,.headerTopS1Title:hover,.headerTopRightLogin,.mian1LLeftdd a:hover{ color:rgb(0, 147, 225); }
+.mostColor,.lis a,.main2Right a:hover,.headerTopS1Content a:hover,.headerTopS1Title:hover,.headerTopRightLogin,.mian1LLeftdd a:hover{ color:rgb(0, 147, 225); }
 .headerTopRight{ width: 294px; height: 20px; *height: 46px; padding-top: 26px; float: right;}
 .headerTopRightP{ float: left; width: 84px; height: 20px; *width: 96px; padding-right: 12px; line-height: 20px; color: rgb(102, 102, 102)}
 .headerTopRightSign{ color: rgb(102,102,102);}
@@ -92,7 +91,7 @@ a:hover{ text-decoration: underline;}
 .mian1LLeftdd li{ height: 32px; width: auto; padding: 0 15px 0 5px; float: left;}
 .mian1LLeftdd a{ color: rgb(102, 102, 102); line-height: 32px;}
 .mian1LRight{ width: 480px; height: 378px; float: right;}
-.mian1LRightTitle{ width: 480px; height: 30px; background-image: url("images/index-tbg.png"); background-position: 0px -57px; background-repeat: repeat-x;}
+.mian1LRightTitle{ overflow: hidden; width: 480px; height: 30px; background-image: url("images/index-tbg.png"); background-position: 0px -57px; background-repeat: repeat-x;}
 .mian1LRightTitle strong{ width: 52px; *width: 60px; height: 27px; display: block; float: left; background-image: url("images/index-tbg.png"); background-repeat: no-repeat; padding-left: 8px; margin-top: 3px; color: rgb(102, 102, 102); line-height: 27px; font-weight: 700;}
 .mian1LRightTitle p{ width: auto;  height: 30px; *padding-right: 4px; background-image: url("images/index-tbg.png"); background-position: 100% -27px; background-repeat: no-repeat; float: right;}
 .mian1LRightTitleA{ width: 56px; height: 27px; margin: 3px 0 0 -3px; border-left: 1px solid rgb(221, 221, 221); *width: 66px; padding: 0 6px 0 -3px; color: rgb(119, 119, 119); line-height: 27px; font-weight: 400; float: left;}
@@ -101,16 +100,120 @@ a:hover{ text-decoration: underline;}
 .mian1LRightCon{ width: 480px; height: 350px; overflow: hidden; background-color: #fff;}
 .mian1LRightCon ul{ width: 480px; height: 352px; display: none; }
 .mian1LRightCon li{ text-align: left; float: left; width: 114px; height: 164px; *width: 120px; *height: 176px; padding: 12px 6px 0 0;}
-.mian1LRightConImgA{ width: 112px; height: 112px; display: block; margin: 0 auto; border:1px solid rgb(221, 221, 221);}
+.mian1LRightConImgA{ position: relative; width: 112px; height: 112px; display: block; margin: 0 auto; border:1px solid rgb(221, 221, 221);}
 .mian1LRightConImgA img{ width: 100%; height: 100%;}
 .mian1LRightConAName{ width: 110px; height: 21px; *height: 29px; padding-top: 8px; display: block; color: rgb(102, 102, 102); line-height: 21px; font-weight: 700;}
 .mian1LRightConSingerName{ width: 110px; height: 21px; display: block; color: rgb(102, 102, 102); line-height: 21px;}
 .mian1LRightCon .mian1LRightConS{ display: block;}
+.mian1LRightShadow{ width: 112px; height: 112px; display: block; position: absolute; top:0; left: 0; background-color: #000; opacity: 0.5; cursor: pointer;}
+.mian1LRightShadow i{ width: 24px; height: 24px; display: block; background-image: url("images/btn_album_play.png"); position: absolute; top: 80px; left: 80px;}
+
+.main1Right{ width: 224px; height: 391px; float: right;}
+.main1RightTopSlide{ width: 224px; height: 191px; margin-top: 3px;}
+.main1RightTopSlideUl{ width: 224px; height: 164px;}
+.main1RightTopSlideUl li{ width: 100%; height: 100%; display: none;}
+.main1RightTopSlideUl a{ width: 100%; height: 100%; display: block;}
+.main1RightTopSlideUl img{ width: 100%; height: 100%;}
+.main1RightTopSlideNum{ width: 222px; height: 25px; border: 1px solid rgb(28,28,28); background-color: rgb(34, 34, 34);}
+.main1RightTopSlideUl .firstLi{ display: block;}
+.slide1Dir{ width: 26px; height: 25px; display: block; background-repeat: no-repeat; background-image: url("images/focuspic-action.png"); }
+.slide1DirLeft{ background-position: 0px -25px; float: left; margin-right: 1px;}
+.slide1DirLeft:hover{ background-position: -26px -25px;}
+.slide1DirRight{ background-position: 0 0; float: right;}
+.slide1DirRight:hover{  background-position: -26px 0px;}
+.main1RightTopSlideNumP{ width: 76px; *width: 166px; margin-right: 1px; height: 17px; *height: 23px; padding: 6px 46px 0 46px; *height: 25px; border-top: 1px solid rgb(144, 144, 144); border-bottom: 1px solid rgb(144, 144, 144); background-color: rgb(102, 102, 102); text-align: center; float: left;}
+.main1RightTopSlideNumP li{  display: inline-block; float: left;  cursor: pointer; width: 10px; height: 10px; margin: 0 4px; background-position: -8px -58px; background-image: url("images/focuspic-action.png"); background-repeat: no-repeat;}
+.main1RightTopSlideNumP .slideAS{ background-position: -34px -58px;}
+.main1RightBottom{ width: 224px; height: 189px;}
+.main1RightBottom img{ width: 224px; height: 189px; margin-top: 8px;}
 
 /*********************main1 end****************************/
 /*********************main2****************************/
+.main2Left{ border: 728px; height: 90px; float: left;}
+.main2Right{ width: 224px; height: 90px; float: right; background-image: url("images/notice.png"); background-repeat: no-repeat; background-position: 0 0;}
+.main2Left a{ color: #fff; display: block; float: left; text-align: center;margin: 0 1px 1px 0; font-family: "微软雅黑";}
+.main2Left1{ width: 102px; height: 28px; background-color: rgb(84, 47, 176); line-height: 28px; }
+.main2Left2{ background-color: rgb(0, 131, 154); }
+.main2Left3{ width: 205px; height: 60px;background-color: rgb(0, 72, 190);line-height: 60px; font-size: 24px;}
+.main2Left4{ background-color: rgb(255, 153, 0);}
+.main2Left .div1{ float: left; width: 103px; height: 100%;}
+.main2Left .div2,.main2Left .div3{ width: 206px; height: 100%; float: left;}
+.main2Left6{ width: 102px; height: 60px; background-color: rgb(145, 0, 158); font-size: 18px; line-height: 60px;}
+.main2Left5{ background-color: rgb(204, 51, 51); font-size: 16px; }
+.main2Left .div4{ width: 103px; height: 100%; float: left;}
+
+.main2Right ul{ width: 216px; height: 72px; *width: 224px; *height: 80px; padding: 8px 0 0 8px;}
+.main2Right li{ width: 192px; height: 24px; *width: 208px; background-image: url("images/icons.gif"); background-position: 6px -85px; background-repeat: no-repeat;}
+.main2Right a{ color: rgb(102, 102, 102); line-height: 24px;}
+
 /*********************main2 end****************************/
 /*********************main3****************************/
+.main3Left{ width: 726px; height: 690px;  float: left;}
+.main44{ width: 100%; height: 585px; overflow: hidden;}
+.main3LeftTop{ overflow: hidden; width: 100%; overflow: hidden; height: 582px; *height: 584px; border:1px solid rgb(170, 203, 238); background-image: url("images/index_tbg.png"); background-position: 0 -212px; background-repeat: repeat-x;}
+.main3Left1{ float: left; width: 242px; height: 582px; margin-left: -1px; border-left: 1px solid rgb(170, 203, 238);}
+.main3Left1Title{ overflow: hidden; text-align: center; width: 100%; height: 29px; }
+.main3Left1Title h2{ width: 52px; height: 25px; *width: 68px; padding: 0 8px; color: rgb(15, 54, 94);  float: left; font-size: 12px; font-weight: 700; line-height: 25px;}
+.main3Left1TitleP{ width: 128px; height: 29px; float: right; }
+.main3Left1TitlePA,.main3Left1TitlePA3{  width: 36px; height: 29px; margin-right: 4px; color: rgb(102, 102, 102); line-height: 25px; float: right; display: block;}
+.main3Left1TitlePAS{ width: 44px; background-image: url("images/tabs_select.png"); background-position: 50% 2px; background-repeat: no-repeat; color: rgb(255, 102, 0); line-height: 31px;}
+.main3Left1Con{ width: 100%; height: 553px;}
+.main3Left1Con ul{width: 236px; height: 520px; display: none; }
+.main3Left1Con .main3Left1ConUlS{ display: block;}
+.main3Left1Con li{ text-align: left; width: 236px; height: 26px; background-image: url("images/dashed_x.gif"); background-position: 0 100%; background-repeat: repeat-x;}
+.main3Left1Con input{ display: block; width: 13px; height: 13px; margin: 6px 5px 0 6px; float: left;}
+.main3Left1Con span{ width: 200px; height: 21px; margin-top: 3px; display: block; float: left;}
+.main3Left1Con a{ color: rgb(85, 85, 85); line-height: 20px;}
+.main3Left1Con a:hover{ color: red;}
+.main2LeftP{ width: 206px; height: 24px; *height: 33px; padding: 5px 0 4px 0; margin: 0 auto;}
+.main2LeftP a{ height: 24px; background-repeat: no-repeat; background-image: url("images/btn_songlist.png"); display: block; float: left;}
+.main2LeftAllSelect{ width: 72px; background-position: -26px -54px; }
+.main2LeftAllSelect:hover{ background-position: -26px -80px; }
+.main2LeftPlay{ width: 56px; background-position:-98px -54px; }
+.main2LeftPlay:hover{ background-position: -98px -80px; }
+.main2LeftAdd{ width: 78px; background-position:-154px -54px; }
+.main2LeftAdd:hover{ background-position: -154px -80px;}
+.main3Left1Con3 ul{ display: block;}
+.main3LeftBottom{ width: 728px; height: 96px;margin-top: 8px; background-color: rgb(170, 170, 170); float: left;}
+.main3LeftBottom ul{ width: 724px; height: 90px; margin: 3px 0 0 3px; }
+.main3LeftBottom li{ float: left; width: 124px; height: 90px; border:1px solid rgb(154, 154, 154); margin-top: 3px 3px 0 3px;}
+.main3LeftBottom img{ width: 124px; height: 86px;}
+.main3Right{ width: 224px; height: 682px; float: right; }
+.main3Left2{ width: 224px; height: 682px;}
+.main3LeftBottom #lis{ width: 90px; background-image: url("images/everyday-more-bg.png"); text-align: center;}
+#lis a{ line-height: 86px; color: rgb(0, 102, 204); font-weight: 700;}
+.main3RightTitle{ overflow: hidden; background-position: 0px -81px; background-repeat: repeat-x; background-image: url("images/index_tbg.png");}
+.main3RightCon{ border: 1px solid rgb(255, 181, 98); border-top:0;  width: 224px; height: 650px; }
+.main3RightCon ul{ width: 216px; margin-left: 3px;}
+.main3RightCon li{ width: 68px; height: 87px; position: relative;float: left; margin-left: 4px; margin-top: 5px;}
+.main3RightCon img{ width: 68px; height: 87px; }
+.main3RightCon span{ color: #fff; line-height: 20px; text-align: center; display: block; position: absolute; background-color: #000; bottom: 0; left: 0; width: 100%; height: 20px; opacity: 0.5;}
+.geshou2ConC{ display: none; }
+.main4Right{ width: 224px; height: 585px; float: right; border: 1px solid rgb(170, 203, 238); }
+.main4RightTitle{ width: 222px; *width: 224px; height: 27px; *height: 29px; border: 1px solid rgb(255, 255, 255); background-image: url("images/index_tbg.png"); background-position: 0px -159px; background-repeat: repeat-x;}
+.main4RightTitle strong{ float: left; width: 98px; height: 23px; *width: 104px; padding-left: 6px; line-height: 25px;}
+.main4RightTitle p{ width: 80px;}
+.main4RightCon{ width: 100%; height: 550px; *overflow: scroll;}
+.main4RightCon li{ background-image: url("images/dashed_x.gif"); background-position: 0 100%; background-repeat: repeat-x;}
+.main4RightConP,.main4RightConPp{  width: 216px; height: 30px; overflow: hidden; }
+.main4RightConP small,.main4RightConPp small{ width: 16px; height: 30px; margin:0 4px 0 8px; display: block; float: left; color: rgb(255, 102, 0); line-height: 30px; font-weight: 400; font-size: 10px;}
+.main4RightConP a,.main4RightConPp a{ width: 188px; height: 30px; line-height: 30px; display: block;color: rgb(0, 102, 204); float: left;}
+.main4RightConP a:hover,.main4RightConPp a:hover{ color: red;}
+.main4RightConPCon{ background-color: #fff; display: none;  width: 208px; height: 64px; *width: 216px; *height: 64px; padding: 8px 4px;}
+.main4RightConPConLeft{ width: 64px; height:64px; display: block; float: left;}
+.main4RightConPConLeft img{ width: 100%; height: 100%;} 
+.main4RightConPp{ width: 144px; }
+.main4RightConPp a{ width: 100px;}
+.main4RightConPConRight{ width: 144px; height: 64px; float: right;}
+.main4RightConPConRightBtn{ cursor: pointer; margin:10px 0 0 10px; background-image: url("images/index_sbg.png"); background-position: -43px -4px; background-repeat: no-repeat;  width: 72px; height: 19px; }
+.main4RightConPConS{ display: block;}
+.main4RightConPS{ display: none;}
+.main7 a{ text-align: left; margin-top: 10px; text-decoration: underline; color: rgb(102, 102, 102); line-height: 16px; width: 84px; height: 16px; *width: 96px; *height: 18px; padding: 1px 6px; display: block; float: left;}
+.main7 a:hover{ color: red;}
+.footP{ text-align: center; width: 960px; height: 25px; color: rgb(204, 204, 204); line-height: 25px;}
+.footP a{ color: rgb(102, 102, 102)}
+.footp2{ color: rgb(136, 136, 136); }
+.footp2 a{ color: rgb(0, 153, 255);}
 /*********************main3 end****************************/
 /*********************main4****************************/
 /*********************main4 end****************************/
