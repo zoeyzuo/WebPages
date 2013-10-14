@@ -55,6 +55,8 @@
 						case "weibo":href="weibo/weibo.html"; break;
 						case "yahoo":href="yahoo/yahoo.html"; break;
 						case "yhouse":href="yhouse/yhouse.html"; break;
+						case "tripNet":href="tripNet/tripNet.html"; break;
+						case "music":href="music/music.html"; break;
 						default:href="#";break;
 					}
 					//alert(href);
@@ -69,7 +71,7 @@
 			}
 			var indexSlide1=1;
 			function slide1(){
-				if (indexSlide1==11) {
+				if (indexSlide1==13) {
 					indexSlide1=1;
 					//$(".main1SlideUl").css("left","0");
 				};
@@ -87,7 +89,7 @@
 					clearInterval(handle);
 					var val=parseInt($(this).attr("value"));	
 					slideChangePicAndNum(ulPicName,ulnumName,val,widthIndex);
-					if (val==10) {
+					if (val==12) {
 						indexSlide1=1;
 					}else{
 						indexSlide1=val+1;
@@ -152,7 +154,7 @@
 			/******************Main end******************/
 			.main1Slide{ width: 680px; height: 650px; margin:0 auto 30px auto; overflow: hidden; position: relative;}
 			.main1SlideUl{ width: 68000px; height: 600px; position: relative;}
-			.main1SlideUl li{ width: 680px; height: 600px; float: left;}
+			.main1SlideUl li{ border: 1px solid #ccc;  width: 680px; height: 600px; float: left;}
 			.main1SlideUl img{ width: 680px; height: 600px; }
 			.main1SlideNum{ width: auto; height: 8px; position: absolute; bottom: 30px; right: 5px; z-index: 1;}
 			.main1SlideNum li{ width: 8px; height: 8px; margin-right: 5px; float: left; background-color: rgba(0,0,0,0.5);}
@@ -180,6 +182,8 @@
 						<li><a nameIs="weibo" href="#">新浪微博</a></li>
 						<li><a nameIs="yahoo" href="#">Yahoo</a></li>
 						<li><a nameIs="yhouse" href="#">YHOUSE-悦会</a></li>
+						<li><a nameIs="tripNet" href="#">新旅游</a></li>
+						<li><a nameIs="music" href="#">一听音乐网</a></li>
 						<!-- <li><a nameIs="tumblr" href="#">Tumblr</a></li>
 						<li><a nameIs="test1" href="#">练习1</a></li>
 						<li><a nameIs="test2" href="#">练习2</a></li>
@@ -192,45 +196,53 @@
 			</div>
 			<div id="main">
 				<ul>
-					<li>
-						<a href="qq/qq.html"><img alt="腾讯首页" title="腾讯首页" src="index/index_images/qq.png"></a>
+					<!-- <li>
+						<a href="qq/qq.html"><img alt="腾讯首页" title="腾讯首页" src="index/index_images/qqSmall.png"></a>
 						<a href="qq/qq.html" class="mainWordA">腾讯首页</a>
-					</li>
+					</li> -->
 					<li>
-						<a href="happyNet/happyNet.html"><img title="开心网" alt="开心网" src="index/index_images/happyNet.png"></a>
+						<a href="happyNet/happyNet.html"><img title="开心网" alt="开心网" src="index/index_images/happyNetSmall.png"></a>
 						<a href="happyNet/happyNet.html" class="mainWordA">开心网</a>
 					</li>
 					<li>
-						<a href="themeForest_within/themeForest.html"><img title="ThemeForest_Within" alt="ThemeForest_Within" src="index/index_images/themeForest.png"></a>
+						<a href="themeForest_within/themeForest.html"><img title="ThemeForest_Within" alt="ThemeForest_Within" src="index/index_images/themeForestSmall.png"></a>
 						<a href="themeForest_within/themeForest.html" class="mainWordA">ThemeForest_Within</a>
 					</li>
 					<li>
-						<a href="职来职往/jobTo.html"><img alt="职来职往" title="职来职往" src="index/index_images/jobTo.png"></a>
+						<a href="职来职往/jobTo.html"><img alt="职来职往" title="职来职往" src="index/index_images/jobToSmall.png"></a>
 						<a href="职来职往/jobTo.html" class="mainWordA">职来职往</a>
 					</li>
 					<li>
-						<a href="tennisNet/tennisNet.html"><img title="网球网" alt="网球网" src="index/index_images/tennisNet.png"></a>
+						<a href="tennisNet/tennisNet.html"><img title="网球网" alt="网球网" src="index/index_images/tennisNetSmall.png"></a>
 						<a href="tennisNet/tennisNet.html" class="mainWordA">网球网</a>
 					</li>
 					<li>
-						<a href="tesla_Motors/tesla.html"><img alt="tesla_Motors" title="tesla_Motors" src="index/index_images/tesla_motors.png"></a>
+						<a href="tesla_Motors/tesla.html"><img alt="tesla_Motors" title="tesla_Motors" src="index/index_images/tesla_motorsSmall.png"></a>
 						<a href="tesla_Motors/tesla.html" class="mainWordA">tesla_Motors</a>
 					</li>
 					<li>
-						<a href="MSN/MSN.html"><img alt="MSN" title="MSN" src="index/index_images/MSN.png"></a>
+						<a href="MSN/MSN.html"><img alt="MSN" title="MSN" src="index/index_images/MSNSmall.png"></a>
 						<a href="MSN/MSN.html" class="mainWordA">MSN中文网</a>
 					</li>
 					<li>
-						<a href="weibo/weibo.html"><img alt="weibo" title="新浪微博" src="index/index_images/weibo.png"></a>
+						<a href="weibo/weibo.html"><img alt="weibo" title="新浪微博" src="index/index_images/weiboSmall.png"></a>
 						<a href="weibo/weibo.html" class="mainWordA">新浪微博</a>
 					</li>
 					<li>
-						<a href="yahoo/yahoo.html"><img alt="yahoo" title="Yahoo" src="index/index_images/yahoo.png"></a>
+						<a href="yahoo/yahoo.html"><img alt="yahoo" title="Yahoo" src="index/index_images/yahooSmall.png"></a>
 						<a href="yahoo/yahoo.html" class="mainWordA">Yahoo</a>
 					</li>
 					<li>
-						<a href="yhouse/yhouse.html"><img alt="yhouse" title="YHOUSE-悦会" src="index/index_images/yhouse.png"></a>
+						<a href="yhouse/yhouse.html"><img alt="yhouse" title="YHOUSE-悦会" src="index/index_images/yhouseSmall.png"></a>
 						<a href="yhouse/yhouse.html" class="mainWordA">YHOUSE-悦会</a>
+					</li>
+					<li>
+						<a href="tripNet/tripNet.html"><img alt="tripNet" title="新旅游" src="index/index_images/tripNetSmall.png"></a>
+						<a href="tripNet/tripNet.html" class="mainWordA">新旅游</a>
+					</li>
+					<li>
+						<a href="music/music.html"><img alt="music" title="一听音乐网" src="index/index_images/musicSmall.png"></a>
+						<a href="music/music.html" class="mainWordA">一听音乐网</a>
 					</li>
 
 				</ul>
@@ -268,6 +280,12 @@
 						<li>
 							<a href="yhouse/yhouse.html"><img alt="yhouse" title="YHOUSE-悦会" src="index/index_images/yhouse.png"></a>
 						</li>
+						<li>
+							<a href="tripNet/tripNet.html"><img alt="tripNet" title="新旅游" src="index/index_images/tripNet.png"></a>
+						</li>
+						<li>
+							<a href="music/music.html"><img alt="music" title="一听音乐网" src="index/index_images/music.png"></a>
+						</li>
 						
 					</ul>
 					<ul class="main1SlideNum">
@@ -281,6 +299,8 @@
 						<li value="8"></li>
 						<li value="9"></li>
 						<li value="10"></li>
+						<li value="11"></li>
+						<li value="12"></li>
 					</ul>
 				</div>
 			</div>
