@@ -1,0 +1,57 @@
+/************************all************************/
+body{ font-family: Arial,Helvetica,Verdana,Tahoma,sans-serif;}
+#top{ width: 960px; height: 85px; position: relative; margin: 20px auto 0 auto;}
+#mainNav{ width: 960px; height: 40px; margin: 25px auto 10px auto;}
+#main{ width: 960px; height: 671px; margin: 0 auto;}
+#mainLeft{ border:1px solid #ccc; width: 655px; height: 671px; float: left; }
+#mainRight{ border:1px solid #ccc; width: 275px; height: 671px; float: right; }
+#foot{ width: 960px; height: 236px;  padding: 15px 0 30px 0; margin: 15px auto 15px auto;  background-color: rgb(213, 213, 210);  border-radius: 8px;}
+/***********************all end*************************/
+
+/*********************top***************************/
+#topLeft{ width: 630px; height: 85px; display: block; float: left; background-image: url("images/logo-drinksmarter.gif");background-repeat: no-repeat;}
+#topRight{ width: 330px; height: 85px; margin-top: 0px; float: right; background-image: url("images/strapline2.gif"); background-repeat: no-repeat;}
+#topFace{ width: 145px; height: 22px; position: absolute; top: -10px; right: 0px; z-index: 2;}
+#topFace img{ width: 18px; height: 18px;float: left;}
+#topFace span{ color: rgb(100, 24, 51); font-size: 13px; line-height: 18.2px; float: right;}
+/************************top end************************/
+
+/*******************mainNav*****************************/
+#mainNav ul{ width: 970px; height: 100%;}
+#mainNav li{ width: 138px; float: left; height: 40px; display: block; }
+#mainNav a{ width: 114px; height: 32px; *width: 134px; *height: 40px; border-top-left-radius: 8px; border-top-right-radius: 8px; display: block; background-color: rgb(160, 163, 166); box-shadow: rgba(0, 0, 0, 0.4) 1px 0px 1px 0px; font-size: 12px; float: left; font-weight: 700; line-height: 12px; color: #fff; padding: 8px 10px 0 10px; margin-right: 4px;}
+#mainNav .as{ background-color: rgb(100, 24, 51);}
+/********************mainNav end****************************/
+
+/************************main************************/
+.mainLeftSlide{ width:645px; height: 337px;  }
+.mainLeftSlided{ width: 645px; height: 275px; }
+.mainLeftSlideUl{ width: 6450px; height: 275px; }
+.mainLeftSlideUl li{ width: 675px; height: 275px; float: left; background-repeat: no-repeat;}
+.mainLeftSlideLi1{ background-image: url("images/hourglass-2.jpg"); }
+.mainLeftSlideLi2{}
+.mainLeftSlideLi3{}
+.mainLeftSlideLi4{}
+.mainLeftSlideContent{ text-align: left; float: right; width: 300px; height: 235px; *height: 275px; *width: 380px; padding: 40px 40px 0 40px; }
+.mainLeftSlideContent h2{ width: 300px; color: rgb(100, 24, 51); font-family: georgia,serif; font-size: 30px; line-height: 30px;}
+.mainLeftSlideContent p{ width: 300px; font-size: 16px; line-height: 22.4px; margin-top: 10px;}
+.mainLeftSlideContent a{ width: 39px; height: 22px; *width: 51px; *height: 28px; padding: 3px 6px; margin: 10px 0; background-color: rgb(186, 151, 26); border-radius: 4px; box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.7);}
+
+
+/***********************main end************************/
+/************************foot************************/
+
+.footLeft{ width: 639px; height: 236px; margin-left: 30px;text-align: left; float: left; background-image: url("images/border-dot-grey.gif"); background-position: 100% 0; background-repeat: repeat-y;}
+.footLeft1{ width: 190px; height: 226px; *height: 236px; *width: 210px; padding: 0 20px 10px 0; float: left;}
+.footLeft1Main{ border-radius: 6px; background-color: #fff; width: 168px; height: 209px; padding: 5px 10px 10px 10px; border: 1px solid rgb(204, 204, 204);}
+.footLeft1 h5{ width: 168px; height: 34px; margin: 10px 0 5px 0; color: rgb(100, 24, 51); font-weight: 700; line-height: 16px; font-size: 16px; }
+.footLeft1 p{ width: 168px; height: 146px; margin: 1px 0 14px 0; line-height: 18.2px; font-size: 13px;  }
+.footLeft2{ width: 190px; height: 166px; *height: 125px; *width: 210px; padding: 0 20px 10px 0; float: left;}
+.footLeft2H5{ width: 190px; height: 12px; margin: 20px 0 10px 0; color: #000; font-weight: 700; line-height: 12px; } 
+.footLeft2Ul a{ width: 170px; height: 12px; *width: 190px; display: block; color: rgb(0, 0, 0); line-height: 12px; padding-left: 20px;  background-image: url("images/grey-arrow.gif"); background-position: 0 1px; background-repeat: no-repeat;}
+.footLeft3{ float: right;}
+.footRight{ width: 270px; height: 121px; float: right;}
+.footRight img{ width: 270px; height: 121px;}
+/**************** foot end********************************/
+
+
