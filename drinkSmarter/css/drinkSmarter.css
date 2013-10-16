@@ -3,8 +3,8 @@ body{ font-family: Arial,Helvetica,Verdana,Tahoma,sans-serif;}
 #top{ width: 960px; height: 85px; position: relative; margin: 20px auto 0 auto;}
 #mainNav{ width: 960px; height: 40px; margin: 25px auto 10px auto;}
 #main{ width: 960px; height: 671px; margin: 0 auto;}
-#mainLeft{ border:1px solid #ccc; width: 655px; height: 671px; float: left; }
-#mainRight{ border:1px solid #ccc; width: 275px; height: 671px; float: right; }
+#mainLeft{ width: 655px; height: 671px; float: left; overflow: hidden;}
+#mainRight{ width: 275px; height: 671px; float: right; }
 #foot{ width: 960px; height: 236px;  padding: 15px 0 30px 0; margin: 15px auto 15px auto;  background-color: rgb(213, 213, 210);  border-radius: 8px;}
 /***********************all end*************************/
 
@@ -24,20 +24,38 @@ body{ font-family: Arial,Helvetica,Verdana,Tahoma,sans-serif;}
 /********************mainNav end****************************/
 
 /************************main************************/
-.mainLeftSlide{ width:645px; height: 337px;  }
-.mainLeftSlided{ width: 645px; height: 275px; }
-.mainLeftSlideUl{ width: 6450px; height: 275px; }
+.mainLeftSlide{ width:645px; height: 355px;  }
+.mainLeftSlided{ width: 645px; height: 275px; overflow: hidden; }
+.mainLeftSlideUl{ width: 645000000000000000000000000000000000000px; height: 275px; position: relative;}
 .mainLeftSlideUl li{ width: 675px; height: 275px; float: left; background-repeat: no-repeat;}
 .mainLeftSlideLi1{ background-image: url("images/hourglass-2.jpg"); }
-.mainLeftSlideLi2{}
-.mainLeftSlideLi3{}
-.mainLeftSlideLi4{}
+.mainLeftSlideLi2{ background-image: url("images/how_much_home.jpg");}
+.mainLeftSlideLi3{ background-image: url("images/health-benefits-banner.jpg");}
+.mainLeftSlideLi4{ background-image: url("images/aging-app-cover-website.jpg");}
 .mainLeftSlideContent{ text-align: left; float: right; width: 300px; height: 235px; *height: 275px; *width: 380px; padding: 40px 40px 0 40px; }
-.mainLeftSlideContent h2{ width: 300px; color: rgb(100, 24, 51); font-family: georgia,serif; font-size: 30px; line-height: 30px;}
+.mainLeftSlideContent h2{ font-weight: 400; width: 300px; color: rgb(100, 24, 51); font-family: georgia,serif; font-size: 30px; line-height: 30px;}
 .mainLeftSlideContent p{ width: 300px; font-size: 16px; line-height: 22.4px; margin-top: 10px;}
-.mainLeftSlideContent a{ width: 39px; height: 22px; *width: 51px; *height: 28px; padding: 3px 6px; margin: 10px 0; background-color: rgb(186, 151, 26); border-radius: 4px; box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.7);}
-
-
+.mainLeftSlideContent a{ width: 39px; height: 22px; *width: 51px; *height: 28px; display: block; font-style: italic; line-height: 22.4px; font-weight: 700; font-size: 16px; color: #fff; padding: 3px 6px; margin: 10px 0; background-color: rgb(186, 151, 26); border-radius: 4px; box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.7);}
+.slideli{ width:127px; height: 38px; *width: 153px; *height: 64px; padding: 10px; margin: 14px 11px 0 0; border:3px solid rgb(213, 213, 210); border-radius: 4px; float: left; color: rgb(166, 169, 171); font-weight: 700; font-size: 15px; line-height: 15px; cursor: pointer;}
+.mainLeftSlideNum{ width: 660px; height: 64px;}
+.slideLis{ width: 133px; height: 42px; padding: 25px 10px 10px 10px; border:0; *width: 153px; *height: 77px; margin: 0 11px 0 0; background-image: url("images/home-show-active-2.gif"); background-position: 0 100%; background-repeat: no-repeat; color: #fff;} 
+.mainLeftBottom{ width: 655px; height: 258px; margin-top: 10px; text-align: left; }
+.mainLeftBottom li{ width: 200px; height: 100%; margin-right: 16px; float: left;}
+.mainLeftBottom a{ width: 200px; height: 133px; display: block;}
+.mainLeftBottom img{ width: 199px; height: 129px;}
+.mainLeftBottom h2{ width: 200px; height: 54px; *height: 63px; font-weight: 400; color: rgb(189, 156, 37); font-size: 24px; line-height: 24px; padding: 5px 0 4px 0; margin-top: 5px;}
+.mainLeftBottom p{ width: 200px; height: 55px; font-size: 13px; line-height: 18.2px; }
+#mainRight h4{ width: 245px; height: 14px; *height: 28px; *width: 275px; padding: 7px 15px; margin-bottom: 10px; background-color: rgb(213, 213, 210); border-radius: 4px; color: rgb(100, 24, 51); line-height:14px; font-weight: 700; line-height: 14px; }
+.mainRight2{ width: 275px; height: 182px; margin: 1px 0 14px 0;}
+.mainRight2 img{ width: 275px; height: 178px;}
+.mainRight3{ text-align: left; width: 275px; height: 55px; margin: 1px 0 14px 0; font-size: 13px; line-height: 18.2px;} 
+.mainRight3 a{ color: rgb(100, 24, 51); text-decoration: underline;}
+.mainRight4{ width: 290px; height: auto;}
+.mainRight4 li{ float: left; width: 130px; height: 150px; margin: 0 15px 15px 0;}
+.mainRight4 a{ display: block;height: 78px; width: 130px; margin: 0 0 5px 0; }
+.mainRight4 img{ height: 78px; width: 130px;}
+h5{ width: 130px; height: 21px;}
+h5 a{ width: 105px; height: 13px; display: block; *height: 21px; *width: 130px; padding: 0 0 8px 25px; color: rgb(188, 154, 32); line-height: 13px; font-size: 13px; font-weight: 700; text-align: left; }
 /***********************main end************************/
 /************************foot************************/
 
