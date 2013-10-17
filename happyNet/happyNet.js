@@ -18,7 +18,7 @@ function initEvents(){
 		if ($(this).val()=="") {
 			$(this).val(function(){
 				return this.name;
-				$("#closePic").css("display","none");
+				$("#closePic").css("display","block");
 			});
 		};
 		$(this).next().css("display","none");
